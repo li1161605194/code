@@ -1,0 +1,35 @@
+{
+    "JsonArray": [{
+        "Money": 123,
+        "MyDate": "2017-02-10",
+        "MyDingDanNum": 43
+    }, {
+        "Money": 111,
+        "MyDate": "2017-02-10",
+        "MyDingDanNum": 19
+    }, {
+        "Money": 98,
+        "MyDate": "2017-02-10",
+        "MyDingDanNum": 35
+    }, {
+        "Money": 78,
+        "MyDate": "2017-02-10",
+        "MyDingDanNum": 24
+    }, {
+        "Money": 106,
+        "MyDate": "2017-02-10",
+        "MyDingDanNum": 88
+    }, {
+        "Money": 123,
+        "MyDate": "2017-02-10",
+        "MyDingDanNum": 34
+    }, {
+        "Money": 121,
+        "MyDate": "2017-02-10",
+        "MyDingDanNum": 76
+    }, {
+        "Money": 69,
+        "MyDate": "2017-02-10",
+        "MyDingDanNum": 56
+    }]
+}

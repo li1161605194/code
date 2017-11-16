@@ -1,0 +1,89 @@
+@charset "UTF-8";
+html,
+body,
+div,
+p,
+nav,
+img,
+input,
+a,
+span,
+i,
+em,
+ul,
+li,
+table,
+tr,
+td,
+*,
+html body *{font-size: 14px; position:relative;border:0;margin:0;padding:0;font-style:normal;font-weight:normal;list-style:none;text-decoration:none;background-repeat:no-repeat;-webkit-overflow-scrolling:touch;cursor:pointer;}
+html,
+body,
+html body{min-width:960px;margin:0 auto;-webkit-overflow-scrolling:touch;background-color:#fff;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}
+img{width: 100%;}
+
+/* house_list */
+.hl_zk{width: 100%;background-color: #F1F1F1;}
+.hl_title{display: block;width: 100%;text-align: center;font-size: 22px;margin: 20px 0;}
+.hl_dwk{width: 96%; display: block;margin: 0 auto;overflow: hidden;}
+.hl_fgk{margin-right: 340px;}
+.hl_uzk{float: right;width: 340px;}
+.hl_ld{width: 100;overflow: hidden;margin-bottom: 15px;}
+.hl_ldtitle{float: left;font-size: 16px;padding: 3px 0px;color: #FF0000;margin-right: 6px;}
+.hl_ldnum{float: left;font-size: 14px;color: #333;background-color: #EDF0F7; border-top-left-radius: 3px ; border-top-right-radius: 3px;
+border-bottom: solid 1px #666; border-top: solid 1px #666;border-left: solid 1px #666;width:50px;  padding: 4px 6px;}
+.hl_ldnum:last-child{border-right: solid 1px #666;}
+.hl_ldnum.xuanz{color: #000000;background-color: #ffffff;}
+.hl_fgbjk{width: 100%;overflow: hidden;}
+.hl_fgstatu{display: block;float: left; font-size: 14px;color: #000000;background-color: #ffffff; line-height: 14px;padding: 8px 6px;
+border: solid 1px #cccccc;border-radius: 3px;margin:  3px 5px ;width:95px;}
+.hl_fgstatu.xuanz{color: #FFFFFF;background-color: #b60000;}
+.hl_uzdwk{border: solid 2px #0062CC;padding: 20px;}
+.swiper-wrapper{height: 575px; border:1px solid #cccccc;width:320px; margin: 0px auto; padding: 10px; background: #ffffff;height:auto;min-height:500px; overflow: hidden;}
+.hl_uxzl{font-size: 14px;color: #333;display: block;margin: 0 auto;width: 300px;height: 25px;line-height: 25px;text-align: left;}
+
+/* house_user_list */
+.hl_uzlk{width: 100%;background-color: #F1F1F1;overflow: hidden;}
+.hl_uzlk .hl_uzdwk{border: 0;float: left;width: 100%;padding: 0;}
+.hl_uzlk .hl_uzdwk .hl_uxzu{overflow: hidden;width: 100%;}
+.hl_uzlk .hl_uzdwk .hl_uxzu .hl_uxzl{font-size: 14px;color: #333;display: block;margin: 0 auto;width: 25%; float:left; height: 25px;line-height: 25px;text-align: center;}
+.hl_ldk {width:90%;margin: 0px auto;}
+.hl_fg{height:auto;min-height:500px;width:90%; margin:20px auto; padding:10px; border:1px solid #cccccc; background: #ffffff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

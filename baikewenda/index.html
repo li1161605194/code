@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百科问答</title>
+</head>
+<body>
+<textarea id="data" style="width: 100%;height: 800px;"></textarea>
+	<script type="text/javascript" src="../res/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../res/js/json2html.js"></script>
+	<script type="text/javascript" src="baike.js"></script>
+	<script type="text/javascript">
+	function yi(){
+		var data= a;
+		data = data.split("^");
+		var leg=data.length;
+		for(var i=0;i<leg;i++){
+			console.info(data[i]);
+			if(data[i].toString().indexOf("？")==-1){
+				data.splice(i,1);
+				leg=data.length;
+			}
+		}
+		
+		var jsondata = [];
+		for(var i=0;i<leg;i++){
+			var temp={};
+			temp.question=data[i].split("？")[0];
+			temp.answer=data[i].split("？")[1];
+			jsondata.push(temp);
+		}
+		$("#data").val(JSON.stringify(jsondata));
+		console.info(jsondata);
+	}
+	yi();
+	</script>
+</body>
+</html>

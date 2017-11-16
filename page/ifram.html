@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<iframe id="novel" name="novel" width="100"  height="24" src="http://m.biquge.com/0_322/1378784.html"></iframe>
+<button id="huoqu" onclick="huoqu()">获取iframe</button>
+<script type="text/javascript" src="../res/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    //var aaa= window.frames["novel"].document.getElementById("nr1").innerHTML;  
+    //var bbb= $("#novel").contents().find("#nr1").html();
+    //var ccc= $("#novel",document.frames("nr1").document).html();
+    //console.log(bbb);
+    // $.ajax({
+    //     url: 'http://www.biquge.com/0_322/1378784.html',
+    //     type: 'get',
+    //     dataType: 'jsonp',
+    //     jsonp: 'jsoncallback()',
+    //     success:function(res){
+    //         alert(1);
+    //         console.log(res);
+    //     },
+    //     error:function(res){
+    //         alert(12);
+    //         console.log(res);
+    //     }
+    // });
+    
+    var dic={x:2,z:1,y:3};//输出  {x:2，y:3，z:1}
+    var sdic=Object.keys(dic).sort(); 
+    for(ki in sdic){
+        console.log(sdic[ki]+":"+dic[sdic[ki]]+",");
+    }
+})
+function jsoncallback(){}
+function huoqu(){
+    //var aaa= window.frames["novel"].document.getElementById("nr1").innerHTML;  
+    //var bbb= $("#novel").contents().find("#nr1").html();
+    //var ccc= $("#novel",document.frames("nr1").document).html();
+    //console.log(bbb);
+}
+   
+</script>
+</body>
+</html>

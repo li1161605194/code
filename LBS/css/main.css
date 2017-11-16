@@ -1,0 +1,24 @@
+@charset "UTF-8";
+html,body,div,p,nav,img,input,a,span,i,em,ul,li,table,tr,td,*{ font-family:微软雅黑; position: relative; border: 0; margin: 0; padding: 0; font-style: normal; font-weight: normal; list-style: none; text-decoration: none; background-repeat: no-repeat; }
+html{ font-size: 14px; font-family:微软雅黑; background-color: #fff;}
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px){html{font-size:25px}}
+
+.bd-w100{width: 100%;}
+.bd-dib{display: inline-block;}
+
+div.pay-bjzk{margin-bottom: 2rem;padding-bottom: 1rem;}
+ul.pay-ul-zk{ list-style: none; background-color: #fff; margin-bottom: 1rem;}
+ul.pay-ul-zk li.pay-li-common{ display: block; }
+p.page-title{ display: block; text-align: center; vertical-align: middle; height: 3.4rem; line-height: 3.4rem; font-size: 1.6rem; background-color: #FD554E; color: #fff; }
+div#mapzk{width: 100%;height: 35rem;}
+p#tip{margin-right: 4%;}
+p.dwsmp-common{width: 45%;padding-left: 2%; font-size: 1.4rem;line-height: 1.8rem;text-align: left;margin-top: 1rem;}
+
+
+

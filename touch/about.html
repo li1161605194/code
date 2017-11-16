@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>手机触屏手势</title>
+    <link rel="stylesheet" type="text/css" href="res/css/main.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="res/js/jquery.min.js"></script>
+    <script type="text/javascript" src="res/js/touch-0.2.14.min.js"></script>
+    <script type="text/javascript" src="res/js/main.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        touch.on('.imgli', 'swipeleft', function(ev){
+        });
+        touch.on('.imgli', 'swiperight', function(ev){
+        });
+        touch.on('.imgli', 'touchstart', function(ev){
+        });
+        touch.on('.imgli', 'touchend', function(ev){
+        });
+    });
+    </script>
+</body>
+
+</html>

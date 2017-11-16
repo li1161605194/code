@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="-1">
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<title>联系物业</title>
+	</head>
+	<body>
+		<div class="page-group">
+			<!-- 单个page ,第一个.page默认被展示-->
+			<div class="page" id="router1">
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 id="asdtemp" class='title'>联系物业</h1>
+					<a class="button button-link button-nav pull-right">
+						<span class="icon icon-menu"></span>
+					</a>
+				</header>
+				<div class="content">
+					<div class="content lxwy-pzk">
+						<img class="lxwy-pzk-img" src="../img/index/jgg/1/1.png" />
+						<span class="lxwy-pzk-smwz">拍照,发布留言</span>
+					</div>
+					<p style="font-size: 0.6rem;" class="row lxwy-pzk-smwz">有图有真相,上传图片发布留言,物业可以更快捷高效的处理问题</p>
+					<div class="content lxwy-dhk">
+						<em class="lxwy-dhk-tel-em">物业管理处电话:<em class="lxwy-dhk-tel-em-xiao">400-8412-1234</em></em>
+						<a class="lxwy-dhk-tel hide-input-common" href="tel:10086"></a>
+					</div>
+				</div>
+				<div id="layermbox1" class="layermbox layermbox0" index="1">
+				<div class="laymshade"></div>
+				<div class="layermmain">
+					<div class="section">
+						<p class="sec-pwz-commom pz" onclick="getImage()">拍照</p>
+						<p style="position: relative;" class="sec-pwz-commom xz">从手机相册选择<input class="hide-input-common" type="file" accept="image/*"/></p>
+						<p class="sec-pwz-commom qx">取消</p>
+					</div>
+				</div>
+				</div>
+				<script type="text/javascript">
+					$.ajax({
+					  url: "../js/page.js",
+					  dataType: "script",
+					  success: function(response){
+					  }
+					});
+				</script>
+			</div>
+		</div>		
+	</body>
+</html>

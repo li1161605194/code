@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>codeExperimentalStation</title>
+    <link rel="shortcut icon" href="http://lstcode.applinzi.com/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../res/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="../res/js/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <div class="zk" data-id="asdasdadaasd">
+        <div class="zk_left">
+            <a href="javascript:void(0)" class="run" id="run">运行</a>
+            <iframe src="codeExperimentalStation.html" name="codeExperimentalStation" id="codeExperimentalStation" width="100%" height="100%"></iframe>
+        </div>
+        <div class="zk_right">
+            <div class="zk_right_dwk_c">
+                <textarea class="textarea_c" id="js_text"></textarea>
+            </div>
+            <div class="zk_right_dwk_c">
+                <textarea class="textarea_c" id="css_text"></textarea>
+            </div>
+            <div class="zk_right_dwk_c">
+                <textarea class="textarea_c" id="html_text"></textarea>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(function() {
+        $(".zk").data("calss_c", "qwert");
+        $(".zk").data("uid", "qwert");
+        $(".zk").data("id", "qwert");
+        $(".zk").data("class", "qwert");
+        console.info($(".zk").data());
+    })
+    </script>
+</body>
+
+</html>

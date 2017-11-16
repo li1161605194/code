@@ -1,0 +1,39 @@
+html{font-size:62.5%;}
+body{font-size:1.4rem;position: relative;background-image: url(../../../freeAPI/img/b6.jpg); }
+
+p.loginyztitle{width: 100%;background-color: #2EA7E0;color: #fff;height: 4rem;line-height: 4rem;text-align: center;font-size: 1.4rem;}
+.loginzk{width: 94%;margin: 0 auto;margin-top: 4rem;}
+.shuru_common_bjk{display: inline-block;vertical-align: middle;width: 100%;height: 4rem;}
+.lable_common{display: inline-block;vertical-align: middle;line-height: 4rem;width: 28%;text-align: right;color: #000;font-size: 1.4rem;}
+.shuruhidek_common{display: inline-block;vertical-align: middle;height: 2.4rem;line-height: 2.4rem;border-bottom: solid 2px #e5e5e5;overflow: hidden;
+width: 72%;position: relative;}
+.shuruhidek_common:hover{border-bottom: solid 2px #2EA7E0;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color:#fff;}
+input:-moz-placeholder, textarea:-moz-placeholder {color:#fff;}
+input::-moz-placeholder, textarea::-moz-placeholder {　color:#fff;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {　　color:#666;　　}
+.input_common{display: inline-block;vertical-align: middle;width: 120%;height: 2.6rem;position: absolute;top: -0.3rem;left: -2rem;text-indent: 2rem;
+background-color: transparent;color: #fff;font-size: 1.6rem;}
+a.submit_alink{display: block;width: 100%;margin: 0 auto;height: 4rem;line-height: 4rem;color: #fff;background-color: #317ee6;font-size: 1.4rem;
+text-align: center;margin-top: 4rem;border-radius: 4rem;}
+a.page_load{display: inline-block;width: 100%;text-align: center;font-size: 1rem;color: #2EA7E0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

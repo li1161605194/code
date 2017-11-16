@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="shortcut icon" href="http://lstcode.applinzi.com/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <script type="text/javascript">
+    //获取经纬度坐标
+    function getPosition(callback) {
+        if ("geolocation" in navigator) {
+            var geo_options = {
+                enableHighAccuracy: true,
+                maximumAge: 0,
+                timeout: 6000
+            };
+            navigator.geolocation.getCurrentPosition(function(pos) {
+                // 获取到当前位置经纬度
+                var lng = pos.coords.longitude;
+                var lat = pos.coords.latitude;
+                callback(lng, lat);
+            }, function(err) {
+                console.log(err.message);
+            }, geo_options);
+        } else {
+            console.log("Browser didnt support geolocation");
+        }
+    }
+
+    //测试
+    getPosition(function(lng, lat) {
+        console.info(lng+"------"+lat);
+        alert(lng+"------"+lat);
+        var out = document.getElementById('out');
+        out.outerHTML = '当前经度:' + lng + '<br/>当前纬度' + lat;
+    });
+    </script>
+    <iframe id="iframeky" class="iframeky" name="iframeky"></iframe>
+    <form target="iframeky" id="postbd" action="http://www.fengfei77.com/WebMainServlet?loan_type=0&page=0&page_size=1" method="post">
+        <button id="post" type="submit">提交</button>
+    </form>
+    <textarea id="postrq" name="postrq"></textarea>
+    <script type="text/javascript" src="../res/js/unit/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $("#postbd").submit();
+        var body = $('#iframeky').contents().find('body');;
+        //var data = eval('(' + body[0].textContent + ')');
+        console.info($(window.frames['iframeky'].document.body[0]).html());
+    });
+
+    var xmlhttp;
+
+    function loadXMLDoc(url, cfunc) {
+        if (window.XMLHttpRequest) { // IE7+, Firefox, Chrome, Opera, Safari 代码
+            xmlhttp = new XMLHttpRequest();
+        } else { // IE6, IE5 代码
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = cfunc;
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    }
+
+    function myFunction() {
+        loadXMLDoc("../data/ajax/ajax_info.txt", function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                console.info(xmlhttp.responseText);
+                //document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+            }
+        });
+    }
+    //myFunction();
+    </script>
+</body>
+
+</html>

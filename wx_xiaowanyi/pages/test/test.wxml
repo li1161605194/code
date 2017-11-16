@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="section">
+    <view class="flex-wrp" style="flex-direction:row;">
+      <navigator url="../sanzijing/sanzijing" style="background-image: url('https://lstcode.applinzi.com/freeAPI/img/test/1.png')" class="flex-item bc_green">
+        <label>三字经</label>
+      </navigator>
+      <navigator url="../baijiaxing/baijiaxing" style="background-image: url('https://lstcode.applinzi.com/freeAPI/img/test/2.png')" class="flex-item bc_blue">
+        <label>百家姓</label>
+      </navigator>
+      <navigator url="../qianziwen/qianziwen" style="background-image: url('https://lstcode.applinzi.com/freeAPI/img/test/3.png')" class="flex-item bc_yellow">
+        <label>千字文</label>
+      </navigator>
+    </view>
+    <view class="flex-wrp" style="flex-direction:row;">
+      <navigator open-type="switchTab" url="../sheet/sheet" style="background-image: url('https://lstcode.applinzi.com/freeAPI/img/test/4.png')" class="flex-item bc_yellow">
+        <label>诗词名句</label>
+      </navigator>
+      <div style="" class="flex-item kong bc_green">
+      </div>
+      <div style="" class="flex-item kong bc_blue">
+      </div>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<view class="page">
+  <text class="title">诗词名句</text>
+  <block wx:for="{{scConfig}}">
+    <view class="sc_bjk">
+      <text class="sz_title">{{item.title}}</text>
+      <text class="sz_name">{{item.name}}</text>
+      <text class="sz_content">{{item.content}}</text>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>预览图片-上传图片</title>
+    <link rel="stylesheet" type="text/css" href="../res/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="box-content" style="height: 500px;">
+        <form id="formTag" class="">
+            <div class="">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">员工照片:</label>
+                    <div class="col-sm-4">
+                        <input type="file" class="form-control imagePreview" placeholder="选择图片">
+                    </div>
+                    <label class="col-sm-2 control-label">驾照照片：</label>
+                    <div class="col-sm-4">
+                        <input type="file" class="form-control imagePreview" placeholder="选择图片">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="../res/js/jquery.min.js"></script>
+    <script type="text/javascript" src="imagePreviewUpload.js"></script>
+    <script type="text/javascript">
+    $(function() {
+    	$("input.imagePreview").imgPreview({
+            imgId:"asd",
+            imgShowId:"qwe"
+        });
+    })
+    </script>
+</body>
+
+</html>

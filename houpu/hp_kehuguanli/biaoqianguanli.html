@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>标签管理</title>
+	<link rel="stylesheet" type="text/css" href="../res/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="bjdwk">
+		<div id="LabelManagement">
+			<ul class="LabelManagement_ul">
+				<li>
+					<p class="LM_close fa fa-close">关闭</p>
+				</li>
+				<li>
+					<p class="LM_title"><span class="da">标签管理</span>同一客户可以有多个标签，删除标签不会删除客户</p>
+				</li>
+				<li class="LM_add">
+					<a id="LM_add_add" class="LM_add_alink_btu" style="float: left;margin-top: 8px;margin-left: 20px;" href="javascript:void(0)">增加标签</a>
+					<div id="LM_add_dwk" class="LM_add_bjk">
+						<input class="LM_add_input" type="text" >
+						<a id="LM_save" class="LM_add_alink_btu" href="javascript:void(0)">保存</a>
+					</div>
+				</li>
+				<li class="LM_name_zli">
+					<div class="LM_list_dwbjk">
+						<a class="LM_name" href="javascript:void(0)">重要客户111</a><a class="LM_czdelete fa fa-minus-circle LM_cz" href="javascript:void(0)"></a><a class="LM_czedit fa fa-pencil LM_cz" href="javascript:void(0)"></a>
+					</div>
+					<div class="LM_list_dwbjk">
+						<a class="LM_name" href="javascript:void(0)">重要客户222</a><a class="LM_czdelete fa fa-minus-circle LM_cz" href="javascript:void(0)"></a><a class="LM_czedit fa fa-pencil LM_cz" href="javascript:void(0)"></a>
+					</div>
+					<div class="LM_list_dwbjk">
+						<a class="LM_name" href="javascript:void(0)">重要客户333</a><a class="LM_czdelete fa fa-minus-circle LM_cz" href="javascript:void(0)"></a><a class="LM_czedit fa fa-pencil LM_cz" href="javascript:void(0)"></a>
+					</div>
+					<div class="LM_list_dwbjk">
+						<a class="LM_name" href="javascript:void(0)">重要客户444</a><a class="LM_czdelete fa fa-minus-circle LM_cz" href="javascript:void(0)"></a><a class="LM_czedit fa fa-pencil LM_cz" href="javascript:void(0)"></a>
+					</div>
+					<div class="LM_list_dwbjk">
+						<a class="LM_name" href="javascript:void(0)">重要客户555</a><a class="LM_czdelete fa fa-minus-circle LM_cz" href="javascript:void(0)"></a><a class="LM_czedit fa fa-pencil LM_cz" href="javascript:void(0)"></a>
+					</div>
+					<div class="LM_list_dwbjk">
+						<a class="LM_name" href="javascript:void(0)">重要客户666</a><a class="LM_czdelete fa fa-minus-circle LM_cz" href="javascript:void(0)"></a><a class="LM_czedit fa fa-pencil LM_cz" href="javascript:void(0)"></a>
+					</div>
+					<div class="LM_list_dwbjk">
+						<a class="LM_name" href="javascript:void(0)">重要客户777</a><a class="LM_czdelete fa fa-minus-circle LM_cz" href="javascript:void(0)"></a><a class="LM_czedit fa fa-pencil LM_cz" href="javascript:void(0)"></a>
+					</div>
+					<div class="clear"></div> 
+				</li>
+				<li>
+					<a class="LM_back" href="javascript:void(0)">返回客户管理</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="../res/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(document).on("click","#LM_add_add",function(e){
+				$("#LM_add_dwk").show(300);
+			});
+			$(document).on("mouseover",".LM_list_dwbjk",function(e){
+				$(this).find(".LM_cz").show();
+			});
+			$(document).on("mouseleave",".LM_list_dwbjk",function(e){
+				$(this).find(".LM_cz").hide();
+			});
+			$(document).on("click","#LM_save",function(e){
+				var name=$(this).parent().find("input").val();
+				if(name==""||name==null||name==undefined){
+
+				}else{
+					$(".LM_name_zli div.clear").remove();
+					$(".LM_name_zli").append(lm_list_name(name));
+					$(this).parent().find("input").val("");
+				}
+				$("#LM_add_dwk").hide(300);
+			});
+			$(document).on("click",".LM_czedit",function(e){
+				$(".LM_add_bjk.lm_edit").remove();
+				$(this).parent().append(lm_edit);
+				$("#xiugaibjlmname").val($(this).parent().find("a.LM_name").html()).focus();
+			});
+			$(document).on("click","#LM_qx",function(e){
+				$(".LM_add_bjk.lm_edit").remove();
+				$(".LM_cz").hide();
+			});
+			$(document).on("click",".LM_czdelete",function(e){
+				$(".LM_add_bjk.lm_delete").remove();
+				$(this).parent().append(lm_delete);
+			});
+			$(document).on("click","#LM_qxsc",function(e){
+				$(".LM_add_bjk.lm_delete").remove();
+				$(".LM_cz").hide();
+			});
+			$(document).on("click","#LM_sc",function(e){
+				$(this).parent().parent().remove();
+			});
+		})
+		function lm_list_name(name){
+			return '<div class="LM_list_dwbjk">'+
+						'<a class="LM_name" href="javascript:void(0)">'+name+'</a><a class="LM_czdelete fa fa-minus-circle LM_cz" href="javascript:void(0)"></a><a class="LM_czedit fa fa-pencil LM_cz" href="javascript:void(0)"></a>'+
+					'</div><div class="clear"></div>';
+		}
+		
+		var lm_edit='<div id="LM_add_dwk" class="LM_add_bjk lm_edit">'+
+						'<input id="xiugaibjlmname" class="LM_add_input" type="text" style="width:130px;" >'+
+						'<a id="LM_edit" class="LM_add_alink_btu" href="javascript:void(0)">保存</a>'+
+						'<a id="LM_qx" class="LM_add_alink_btu" style="background-color:#607d8b;" href="javascript:void(0)">取消</a>'+
+					'</div>';
+		var lm_delete='<div id="LM_add_dwk" class="LM_add_bjk lm_delete">'+
+						'<p class="lmsctishi">删除标签不会删除客户</p>'+
+						'<a id="LM_sc" class="LM_add_alink_btu" href="javascript:void(0)">删除</a>'+
+						'<a id="LM_qxsc" class="LM_add_alink_btu" style="background-color:#607d8b;" href="javascript:void(0)">关闭</a>'+
+					'</div>';
+
+	</script>
+</body>
+</html>

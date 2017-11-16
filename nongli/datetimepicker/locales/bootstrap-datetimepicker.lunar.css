@@ -1,0 +1,14 @@
+.table-condensed>tbody>tr>td{
+    padding: 1px;
+}
+.datetimepicker table tr td.active p{
+    color: #fff;
+}
+.datetimepicker  td,
+.datetimepicker th {
+    width: 50px;
+}
+.datetimepicker table tr td.old p,
+.datetimepicker table tr td.new p{
+    color: #999999;
+}

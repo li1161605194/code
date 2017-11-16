@@ -1,0 +1,8 @@
+<view class="page">
+  <text class="title">千字文</text>
+  <block wx:for="{{qzwConfig}}">
+    <view class="sc_bjk">
+      <text class="sz_title">{{item.content}}</text>
+    </view>
+  </block>
+</view>

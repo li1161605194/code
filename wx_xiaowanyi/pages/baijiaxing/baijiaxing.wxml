@@ -1,0 +1,8 @@
+<view class="page">
+  <text class="title">百家姓</text>
+  <block wx:for="{{bjxConfig}}">
+    <view class="sc_bjk">
+      <text class="sz_title">{{item.content}}</text>
+    </view>
+  </block>
+</view>

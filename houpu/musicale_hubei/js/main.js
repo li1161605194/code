@@ -1,0 +1,9 @@
+$(function(){
+    $(".bfb").height($(".bfb").width()*3/4);
+    window.onresize=function(){
+        $(".bfb").height($(".bfb").width()*3/4);
+    }
+    $("div[data-href]").click(function(){
+        window.location.href=$(this).data("href");
+    })
+})

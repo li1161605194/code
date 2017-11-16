@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="-1">
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<title>开门记录</title>
+		<link rel="stylesheet" href="../css/scrollbar.css" />
+	</head>
+	<body>
+		<div class="page-group">
+			<!-- 单个page ,第一个.page默认被展示-->
+			<div class="page" id="router1">
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 id="asdtemp" class='title'>开门记录</h1>
+					<a class="button button-link button-nav pull-right">
+						全部<span class="icon icon-down"></span>
+					</a>
+				</header>
+				<div id="wrapper" style="height: 100%;">
+					<div id="scroller" style="overflow: auto;height: 100%;">
+						<div id="pullDown">
+							<span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+						</div>
+						
+						<div class="card-container" style="overflow: auto;height: 100%;">
+					        <p class="no-info-sm-common">暂无数据</p>
+					    </div>
+						
+						<div id="pullUp">
+							<span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+						</div>
+						
+					</div>
+				</div>
+				<div id="layermbox1" class="layermboxtop layermbox" index="1">
+				<div class="laymshade"></div>
+				<div class="layermmain">
+					<div class="section">
+						<p class="sec-pwz-commom" data-type="0">全部</p>
+						<p class="sec-pwz-commom" data-type="1">APP开门</p>
+						<p class="sec-pwz-commom" data-type="2">密码开门</p>
+						<p class="sec-pwz-commom" data-type="3">呼叫开门</p>
+						<p class="sec-pwz-commom" data-type="4">未开门</p>
+					</div>
+				</div>
+				</div>
+				<script type="text/javascript">
+					$.ajax({
+					  url: "../js/native/iscroll.js",
+					  dataType: "script",
+					  success: function(response){
+							$.ajax({
+							  url: "../js/page.js",
+							  dataType: "script",
+							  success: function(response){
+							  }
+							});
+					  }
+					});
+				</script>
+				<script>
+					document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+					document.addEventListener('DOMContentLoaded', loaded, false); 
+				</script>
+				
+			</div>
+		</div>		
+	</body>
+</html>

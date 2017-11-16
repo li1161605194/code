@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>比例确定,图片大小不确定,实现等高等宽</title>
+	<style type="text/css">
+	html,body,div,p,a,em,li,ul, tr,td,* {
+        font-family: 微软雅黑;
+        position: relative;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: normal;
+        list-style: none;
+        text-decoration: none;
+        background-repeat: no-repeat;
+    }
+    html {
+        font-size: 14px;
+        font-family: 微软雅黑;
+    }
+		.zk{background-color: #fff;padding: 20px;}
+		h3{text-align: center;font-size: 28px;}
+		.bjk{width: 98%;margin: 0 auto;border:solid 1px #000;overflow: hidden;}
+		.dwk{width: 48%;float: left;margin: 0;}
+		.dwk:nth-child(1){margin-right: 4%;}
+		.imgtu{
+			width: 100%;
+		}
+		.bfbimg{
+			width: 100%;
+			height: 100%;
+		}
+		.budeng{
+			width: 100%;height: 0;padding-bottom: 75%;background-position: center center; background-size: cover;
+		}
+		.budeng.yi{background-image: url(1.jpg);}
+		.budeng.er{background-image: url(3.jpg);}
+		.budenger{
+			width: 100%;height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="zk">
+		<h3>图片等比例,不同宽高,约束显示比例为4:3</h3>
+		<div class="bjk">
+			<div class="dwk">
+				<img class="imgtu" src="da.png" alt="">
+			</div>
+			<div class="dwk">
+				<img class="imgtu" src="xiao.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="zk">
+		<h3>图片不等比例,不同宽高,约束显示比例为4:3</h3>		
+		<div class="bjk">
+			<div class="dwk">
+				<div class="budeng yi"></div>
+			</div>
+			<div class="dwk">
+				<div class="budeng er"></div>
+			</div>
+		</div>
+	</div>
+	<div class="zk">
+		<h3>图片不等比例,不同宽高,约束显示比例为4:3</h3>		
+		<div class="bjk">
+			<div class="dwk">
+				<div class="budenger">
+					<img class="bfbimg" src="1.jpg" alt="">
+				</div>
+			</div>
+			<div class="dwk">
+				<div class="budenger">
+					<img class="bfbimg" src="3.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var dwk_w=$(".dwk").width();
+			$("img.bfbimg").height(dwk_w*3/4);
+		})
+	</script>
+</body>
+</html>

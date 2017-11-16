@@ -1,0 +1,33 @@
+.flex-wrp{
+  display:flex;
+  background-color: #FFFFFF;
+}
+.flex-item{
+  width: 33.33%;
+  height: 240rpx;
+  padding: 20rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+.flex-item:nth-child(1n){
+  border-bottom: solid 0px #000;
+  border-right: solid 0px #000;
+}
+.flex-item:nth-child(2n){
+  border-right: solid 0px #000;
+}
+.flex-item:nth-child(3n){
+  border-left: solid 0px #000;
+  border-right: solid 0px #000;
+}
+.flex-item.kong{
+  opacity: 0;
+}
+.flex-item label{
+  margin-top: 240rpx;
+}

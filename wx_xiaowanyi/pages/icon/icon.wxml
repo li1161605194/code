@@ -1,0 +1,12 @@
+<text>各种小icon不同size不同颜色的对号</text>
+<view class="group">
+<block wx:for="{{iconType}}" wx:key="b" wx:for-index="iconTypeid" wx:for-item="iconTypeitemName">
+  <block wx:for="{{iconSize}}" wx:key="a" wx:for-index="iconSizeid" wx:for-item="iconSizeitemName">
+    <block wx:for="{{iconColor}}" wx:key="c" wx:for-index="iconColorid" wx:for-item="iconColoritemName">
+      <icon type="{{iconTypeitemName}}"  color="{{iconColoritemName}}" size="{{iconSizeitemName}}"/>
+    </block>
+  </block>
+</block>
+</view>
+
+

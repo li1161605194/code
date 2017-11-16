@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>九州公益行</title>
+    <link rel="stylesheet" type="text/css" href="res/css/main.css">
+</head>
+
+<body>
+    <div class="">
+        <div class="">
+            <div class="" style="">
+                <div class="main_visual">
+                    <div class="main_image">
+                        <ul>
+                            <li class="imgli"><a href="index.html"><span class="img_3"></span></a></li>
+                            <li class="imgli"><a href="index.html"><span class="img_4"></span></a></li>
+                            <li class="imgli"><a href="index.html"><span class="img_5"></span></a></li>
+                        </ul>
+                        <a style="display: none;" href="javascript:;" id="btn_prev"></a>
+                        <a style="display: none;" href="javascript:;" id="btn_next"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="lunbozhanwei_clean">
+            	<div class="flicking_con">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+            </div>
+        </div>
+        <div class="nrzk_st" style="clear: both;">
+        	<section>
+                <ul class="shop_show_ul">
+                    <li class="shop_show_li">
+                        <div class="shop_show_bjk yi">
+                            <div style="background-image: url(res/img/4001.jpg);" class="shopimg"></div>
+                            <p class="shop_ms">青海无污染牛肉1500g</p>
+                            <p class="shop_price"><em>¥</em>99.0</p>
+                        </div>
+                        <div class="shop_show_bjk er">
+                            <div style="background-image: url(res/img/4001.jpg);" class="shopimg"></div>
+                            <p class="shop_ms">青海无污染牛肉1500g</p>
+                            <p class="shop_price"><em>¥</em>99.0</p>
+                        </div>
+                    </li>
+                    <li class="shop_show_li">
+                        <div class="shop_show_bjk yi">
+                            <div style="background-image: url(res/img/4001.jpg);" class="shopimg"></div>
+                            <p class="shop_ms">青海无污染牛肉1500g</p>
+                            <p class="shop_price"><em>¥</em>99.0</p>
+                        </div>
+                        <div class="shop_show_bjk er">
+                            <div style="background-image: url(res/img/4001.jpg);" class="shopimg"></div>
+                            <p class="shop_ms">青海无污染牛肉1500g</p>
+                            <p class="shop_price"><em>¥</em>99.0</p>
+                        </div>
+                    </li>
+                    <li class="shop_show_li">
+                        <div class="shop_show_bjk yi">
+                            <div style="background-image: url(res/img/4001.jpg);" class="shopimg"></div>
+                            <p class="shop_ms">青海无污染牛肉1500g</p>
+                            <p class="shop_price"><em>¥</em>99.0</p>
+                        </div>
+                        <div class="shop_show_bjk er">
+                            <div style="background-image: url(res/img/4001.jpg);" class="shopimg"></div>
+                            <p class="shop_ms">青海无污染牛肉1500g</p>
+                            <p class="shop_price"><em>¥</em>99.0</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="bhuibjk h20_fenget"></div>
+            </section>
+            <section>
+                <div class="jz_it_support_common juzhong_cz">
+                    <div class="gyb_imgk fll_bd">
+                        <img class="gyb_img" src="res/img/index/logo.png">
+                    </div>
+                    <div class="it_support_swk fll_bd">
+                        <p>技术支持：<a style="color: #ff7415;" href="http://app.gongyibao.cn/mobeldown/gybdl.html">公益宝</a><br>人人公益，触手可及</p>
+                    </div>
+                    <div class="it_support_swk flr_bd">
+                        <p class="it_support_tel tar_bd">&nbsp;&nbsp;&nbsp;<br>4008-129-188</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="../res/js/jquery.min.js"></script>
+    <script type="text/javascript" src="res/js/main.js"></script>
+    <script type="text/javascript" src="../res/js/jquery.touchSlider.js"></script>
+    <script type="text/javascript" src="../res/js/touch-0.2.14.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $dragBln = false;
+        $(".main_image").touchSlider({
+            flexible: true,
+            speed: 200,
+            btn_prev: $("#btn_prev"),
+            btn_next: $("#btn_next"),
+            paging: $(".flicking_con a"),
+            counter: function(e) {
+                $(".flicking_con a").removeClass("on").eq(e.current - 1).addClass("on");
+            }
+        });
+        $(".imgli").bind("mousedown", function() {
+            $dragBln = false;
+        });
+        $(".imgli").bind("dragstart", function() {
+            $dragBln = true;
+        });
+        $(".imgli a").click(function() {
+            if ($dragBln) {
+                return false;
+            }
+        });
+        timer = setInterval(function() {
+            $("#btn_next").click();
+        }, 3500);
+        $(".imgli").mouseover(function() {
+            clearInterval(timer);
+        }).mouseleave(function() {
+            timer = setInterval(function() {
+                $("#btn_next").click();
+            }, 3500);
+        });
+
+
+        touch.on('.imgli', 'swipeleft', function(ev){
+	            $("#btn_next").click();
+        });
+        touch.on('.imgli', 'swiperight', function(ev){
+	            $("#btn_prev").click();
+        });
+        touch.on('.imgli', 'touchstart', function(ev){
+                clearInterval(timer);
+        });
+        touch.on('.imgli', 'touchend', function(ev){
+        	clearInterval(timer);
+            timer = setInterval(function() {
+                $("#btn_next").click();
+            }, 3500);
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>农历</title>
+    <link rel="stylesheet" type="text/css" href="../res/css/main.css">
+    <link rel="stylesheet" type="text/css" href="datetimepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="datetimepicker/locales/bootstrap-datetimepicker.lunar.css">
+</head>
+
+<body>
+    <section class="whbfb">
+        <div class="input-append date" id="datetimepicker" data-date="2017-01-01" data-date-format="yyyy-mm-dd">
+            <input size="16" type="text" value="12-02-2012" readonly>
+            <span class="add-on"><i class="icon-th"></i></span>
+        </div>
+    </section>
+    <script type="text/javascript" src="../res/js/jquery.min.js"></script>
+    <script type="text/javascript" src="datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="datetimepicker/locales/bootstrap-datetimepicker.lunar.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('#datetimepicker').datetimepicker({
+            format: 'yyyy-mm-dd',
+            setStartDate:'2017-01-01',
+            startView: 2,
+            minView: 2,
+            maxView: 4,
+            todayBtn: "linked",
+            language: "zh-CN"
+        });
+    })
+    </script>
+</body>
+
+</html>

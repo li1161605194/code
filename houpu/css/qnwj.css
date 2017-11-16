@@ -1,0 +1,44 @@
+@charset "UTF-8";
+html,body,div,p,nav,img,input,a,span,i,em,ul,li,table,tr,td,section,
+*{font-family:"Microsoft yahei";position:relative;border:0;margin:0;padding:0;font-style:normal;font-weight:normal;list-style:none;text-decoration:none;background-repeat:no-repeat;}
+html{font-size:14px;font-family:"Microsoft yahei";}
+html,body{overflow-x: hidden;width: 100%; min-width: 320px; height: 100%; min-height:100%;}
+a,a:hover{-webkit-tap-highlight-color:transparent}
+.tac_bd{text-align: center;}
+.tal_bd{text-align: left;}
+.tar_bd{text-align: right;}
+.fontwb{font-weight: bold;}
+.no_f_m{overflow: hidden;}
+.fll_bd{float: left;}
+.flr_bd{float: right;}
+.fln_bd{float: none;}
+.bg_hui{background-color: #f5f7f9; }
+.bffbjk{background-color: #fff;}
+.bhuibjk{background-color: #f5f4f4;}
+.masks {z-index:999;background:rgba(0,0,0,0.6);width:100%;height:100%;position:fixed;top:0;left:0;zoom:1;}
+.fengetiao{width: 100%;height: 20px;background-color: #f5f4f4;border-top: solid 1px #e5e5e5;border-bottom: solid 1px #e5e5e5;}
+
+/* goodcity */
+.look_city_list{width: 94%;height: 80px;line-height: 80px;vertical-align: middle;padding: 0 3%;}
+.jbimg{width: 18%;display: inline-block;text-align: center;max-height: 40px;max-width: 40px;}
+.look_city_ak{display: inline-block;vertical-align: middle;}
+a.look_city_alink{color: #333;font-size: 20px;margin-left: 10px;}
+.citygoodbjk{width: 97%;padding: 0 0% 0 3%;}
+.cityk_common{display: inline-block;position: relative;width: 21%;margin-right: 3%;margin-top: 20px; border-radius: 50%;border: solid 1px #e5e5e5;background-color: #fff;}
+.cityk_common.xuanz{background-color: #eeeeee;}
+a.cityname_common{display: block;width: 100%;font-size: 18px;text-align: center;color: #333;}
+.citygood{position: absolute;bottom: 0;right: 0;z-index: 9;width: 35%;}
+.citygood img.citygoodimg{width: 100%;position: absolute;bottom: 0;right: 0;z-index: 9;}
+.smwz{width: 100%;text-align: center;font-size: 15px;color: #999;margin-top: 40px;}
+
+/* citylist */
+.cityphbk{background-color: #fff;height: 60px;vertical-align: middle;}
+.cityphbwz{color: #333;font-size: 18px;display: inline-block;border-left: solid 3px #f98e29;height: 18px;line-height: 18px;padding-left: 20px;margin-top: 21px;}
+.citypmul{}
+.citypmli{width: 94%;margin: 0 auto; border-bottom: solid 1px #e5e5e5;height: 40px;line-height: 40px;padding: 10px 0;}
+.citypmli span{display: inline-block;color: #333;font-size: 18px;}
+.citypmli span.yi{width: 10%;}
+.citypmli span.er{width: 62%;}
+.citypmli span.san{width: 28%;text-align: right;color: #666666;}
+.citypmli span.san span.zanimgk{width: 18%; text-align: left;float: left;}
+.citypmli span.san span.zanimgk img.zanimg{width: 100%;max-height: 40px;max-width: 40px;}

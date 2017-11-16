@@ -1,0 +1,8 @@
+<view class="page">
+<text class="title">三字经</text>
+<block wx:for="{{szjConfig}}">
+    <view class="sc_bjk">
+      <text class="sz_title">{{item.content}}</text>
+    </view>
+  </block>
+</view>

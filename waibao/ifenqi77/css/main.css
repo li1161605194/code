@@ -1,0 +1,92 @@
+@charset "UTF-8";
+html,body,div,p,nav,img,input,a,span,i,em,ul,li,table,tr,td,*{ font-family:微软雅黑; position: relative; border: 0; margin: 0; padding: 0; font-style: normal; font-weight: normal; list-style: none; text-decoration: none; background-repeat: no-repeat; }
+html{ font-size: 14px; font-family:微软雅黑; }
+@media screen and (min-width:800px){html{font-size:20px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:18px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:17px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:16px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:374px) and (max-width:414px){html{font-size:14px}}
+@media screen and (min-width:310px) and (max-width:373px){html{font-size:10px}}
+a,a:hover{-webkit-tap-highlight-color:transparent;color: #fff;}
+.bd-w100{width: 100%;}
+.bd-w1200{width: 1200px;margin: 0 auto;}
+.bd-dib{display: inline-block;}
+.fll{float: left;}
+.flr{float: right;}
+
+
+ul.pay-ul-zk{ list-style: none; background-color: #fff; margin-bottom: 1rem;}
+ul.pay-ul-zk li.pay-li-common{ display: block; width: 100%;}
+p.page-title{ display: block; text-align: center; vertical-align: middle; height: 3.4rem; line-height: 3.4rem; font-size: 1.4rem; background-color: #FD554E; color: #fff; }
+span.pay-common-leftspan{ width: 28%; height: 3.2rem; line-height: 3.2rem; font-size: 1.1rem; color: #000; font-weight: bold; text-align: left; padding-left: 4%; }
+span.pay-common-rightspan{ width: 65%; height: 3.2rem; line-height: 3.2rem; font-size: 1rem; color: #000; text-align: left; padding-left: 1%; }
+li.pay-li-common.xian{ border-bottom: solid 1px #EDE3D3; height: 5rem; line-height: 5rem; vertical-align: middle; }
+div.pay-type-rediok{ height: 1.4rem; line-height: 1.4rem; width: 1.4rem; vertical-align: middle; text-align: center; margin-left: 4%; background-image: url(../img/yuan_kong.png); background-size: cover; }
+div.pay-type-rediok.shi{ background-image: url(../img/yuan_shi.png); }
+div.pay-icoimgk{ width: 10%; height: 3rem; background-size: contain; vertical-align: middle; text-align: center; margin:0 2%; }
+img.pay-img{ display: none; width: 90%; vertical-align: middle; text-align: center; }
+div.pay-type-namek{ width: 25%; }
+span.pay-name{ font-size: 1rem; color: #000; font-weight: bold; text-align: left; }
+div.pay-type-smk{ width: 51%; }
+span.pay-sm{ font-size: 0.9rem; color: #7E786F; text-align: left; }
+a.now_pay{ display: block; width: 70%; border-radius: 24px; margin:0 auto; margin-top: 10rem; height: 3.4rem; line-height: 3.4rem; text-align: center; font-size: 1.4rem; color: #fff; background-color: #FD554E; }
+p.pay_beizhu_sm{ display: block; width: 92%; margin: 0 auto; margin-top: 3rem; font-size: 1rem; line-height: 1.2rem; color: #B3AB9F; }
+
+
+img#result-img{ display: block; margin: 0 auto; width: 15%; margin-top: 2rem; }
+p.result-jg-sm{ font-size: 1.4rem; display: block; width: 100%; text-align: center; height: 2.2rem; line-height: 2.2rem; color: #000; font-weight: bold; margin-top: 1.2rem; }
+
+/* header  footer */
+.hangdiv_common.header{height: 62px;line-height: 62px;color: #fff;background-color: #182e45;}
+.tou-dwk{height: 62px;line-height: 62px;overflow: hidden;}
+.tou-common{height: 62px;line-height: 62px;text-align: center;vertical-align: middle;font-size: 16px;}
+.telnum,.loginan{height: 62px;line-height: 62px;margin-left: 10px;}
+.loginan{cursor: pointer;}
+.hangdiv_common.footer{background-color: #182e45;height: 200px;}
+.footerpsm-common{display: inline-block; text-align: center;font-size: 18px;color: #fff;line-height: 34px;}
+
+.container{display: block;}
+.hangdiv_common{display: block;margin: 0 auto;}
+/*  index.html  */
+.hangdiv_common.yi{background-color: #fff;}
+.shoptitle{border-bottom: solid 1px #d2d2d2;padding: 15px 0;margin-bottom: 45px;}
+.shiplisttitle{font-size: 30px;color: #2d2d2d;line-height: 38px;text-align: center;}
+.shoplistzk{overflow: hidden;}
+.shopzk{width: 352px;margin-bottom: 50px;margin-right: 25px;}
+.shopzk:nth-child(3),.shopzk:nth-child(6),.shopzk:nth-child(9),.shopzk:nth-child(12){margin-right: 0px;}
+.shopzk:nth-child(1),.shopzk:nth-child(4),.shopzk:nth-child(7),.shopzk:nth-child(10){margin-left: 47px;}
+.shopdwk{width: 100%;}
+.shopul,.shopli{list-style: none;width: 100%;}
+.mtb6{margin: 6px 0;}
+.shopimg{width: 100%;margin: auto 0;height: 390px;max-width: 350px;border: solid 1px #d2d2d2;}
+.shopimg:hover{
+	box-shadow:3px 3px 2px #d2d2d2;
+-moz-box-shadow:3px 3px 2px #d2d2d2;
+-webkit-box-shadow:3px 3px 2px #d2d2d2;
+}
+.shopsm{font-size: 16px;color: #757575;width: 225px;margin-left:65px;text-align: left;}
+.shopjg{font-size: 30px;color: #f95a57;width: 280px;margin-left: 65px;text-align: left;}
+.shopdetailalinkindex{font-size: 16px;color: #fff;background-color: #fd5555;display: block;width: 128px;height: 44px;line-height: 44px;text-align: center;border-radius: 4px;margin-left: 65px;}
+.shopdetailalink{position: absolute;bottom: 0; font-size: 16px;color: #fff;background-color: #fd5555;display: block;width: 128px;height: 44px;line-height: 44px;text-align: center;border-radius: 4px;margin-left: 65px;}
+
+
+/*  shopdetail.html  */
+.shopdetailzk{border: solid 1px #d2d2d2;background-color: #fff;}
+.sdetail-common{width: 1128px;margin: 0 auto;}
+.kcnum{display: block;margin-left: 30px;}
+.kcnum span{font-size: 16px;color: #757575;}
+.fangbox{width: 28px;height: 28px;text-align: center;line-height: 28px;border: solid 1px #d2d2d2;}
+
+
+/*  login.html  */
+.loginzk{background-color: #fff;border: solid 1px #d2d2d2;height: 600px;margin: 50px auto;}
+.loginalink{width: 525px;height: 70px;line-height: 70px;border-radius: 4px; display: inline-block;text-align: center;background-color: #fd5555;color: #fff;font-size: 30px;}
+.loginleftimg{width: 482px;height: 379px;margin:84px 84px 0 40px;}
+input.login-common{font-size: 20px;padding-left: 125px; width: 400px;height: 70px;line-height: 70px;border-radius: 0;border: solid 1px #d2d2d2;}
+input.login-common.hong{border: solid 1px #fd5555;}
+.logininputico-common{width: 27px;height: 34px;display: inline-block;position: absolute;left: 20px;top:20px;}
+.loginsm-common{position: absolute;left: 55px;top:20px;font-size: 26px;color:#434343; }
+
+
+

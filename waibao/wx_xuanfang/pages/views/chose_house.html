@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <script>
+    var initParams = {
+        "css": [],
+	    "js": ["js/views/chose_house.js"],
+        "title": "选房"
+    };
+    </script>
+    <script src="../../js/init.js"></script>
+    <title></title>
+</head>
+
+<body ontouchstart>
+    <div class="page">
+        <div class="page_bd">
+            <div class="weui-tab">
+                <div class="weui-tab_panel">
+                    <div class="ch_bgimg">
+                        <div class="ch_titleimgk">
+                            <img src="../../img/title.png" class="ch_titleimg" />
+                        </div>
+                        <div class="ch_djsk_dhk">
+                            <div class="ch_djsk">
+                                <div class="ch_djs"></div>
+                            </div>
+                            <div class="ch_dhk">
+                                <div class="ch_dh">
+                                    <div class="draw" id="lottery">
+                                        <table>
+                                            <tr>
+                                                <td class="item lottery-unit lottery-unit-0">
+                                                    <div class="img">
+                                                        <img src="../../img/pmd/img1.png" alt="">
+                                                    </div>
+                                                    <span class="name"></span>
+                                                </td>
+                                                <td class="gap"></td>
+                                                <td class="item lottery-unit lottery-unit-1">
+                                                    <div class="img">
+                                                        <img src="../../img/pmd/img2.png" alt="">
+                                                    </div>
+                                                    <span class="name"></span>
+                                                </td>
+                                                <td class="gap"></td>
+                                                <td class="item lottery-unit lottery-unit-2">
+                                                    <div class="img">
+                                                        <img src="../../img/pmd/img3.png" alt="">
+                                                    </div>
+                                                    <span class="name"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="gap-2" colspan="5"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item lottery-unit lottery-unit-7">
+                                                    <div class="img">
+                                                        <img src="../../img/pmd/img4.png" alt="">
+                                                    </div>
+                                                    <span class="name"></span>
+                                                </td>
+                                                <td class="gap"></td>
+                                                <td class=""><a class="draw-btn" href="javascript:">选房</a></td>
+                                                <td class="gap"></td>
+                                                <td class="item lottery-unit lottery-unit-3">
+                                                    <div class="img">
+                                                        <img src="../../img/pmd/img5.png" alt="">
+                                                    </div>
+                                                    <span class="name"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="gap-2" colspan="5"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item lottery-unit lottery-unit-6">
+                                                    <div class="img">
+                                                        <img src="../../img/pmd/img6.png" alt="">
+                                                    </div>
+                                                    <span class="name"></span>
+                                                </td>
+                                                <td class="gap"></td>
+                                                <td class="item lottery-unit lottery-unit-5">
+                                                    <div class="img">
+                                                        <img src="../../img/pmd/img7.png" alt="">
+                                                    </div>
+                                                    <span class="name"></span>
+                                                </td>
+                                                <td class="gap"></td>
+                                                <td class="item lottery-unit lottery-unit-4">
+                                                    <div class="img">
+                                                        <img src="../../img/pmd/img8.png" alt="">
+                                                    </div>
+                                                    <span class="name"></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ch_btnk">
+                            <div class="ch_stark">
+                                <div class="ch_star" id="star_chose_house">
+                                    <!--<img class="ch_starimg" src="../../img/star1.png">-->
+                                    <!--<span class="ch_starwz tzpage" rel="users/result.html">开始</span>-->
+                                    <span class="ch_starwz" id="houseStar">开始</span>
+                                </div>
+                                <p class="user_type">注：您是A类用户仅可选A类房源</p>
+                            </div>
+                            
+                        </div>
+                        <div class="ch_infok">
+                            <div class="ch_infoleftk">
+                                <img class="ch_infoleftimg" src="../../img/left.png">
+                                <span class="ch_infoleftwz tzpage" rel="users/house_summary.html?m=0">剩余房源<em id="houseNum">188</em>套</span>
+                            </div>
+                            <div class="ch_inforightk">
+                                <img class="ch_inforightimg" src="../../img/right.png">
+                                <span class="ch_inforightwz">剩余时间:<em id="houseTime">23:23:23</em></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tips" class="tipszk" style="display: none;">
+    	<p class="tipszk_title">团购须知</p>
+    	<p class="tipszk_wzyi">1、工会的全部房源都分别进入A、B、C、D类户型池，意向书登记的客户量小于或等于池中分类总房源量，即保证每位登记客户均能有序点抽到房源。</p>
+		<p class="tipszk_wzyi">2、客户对应已签定意向书房源，采用微信线上点击分类总房源（A、B、C、D）。系统自动按随机概率抽取唯一的房号(包含栋号、单元号)。</p>
+		<p class="tipszk_wzer">
+			本活动时间安排如下：<br/>
+			<!--<span class="tipszk_wzsan">A户型(包含A1、A2)：2017-11-20 10:15 至 2017-11-20 10:18</span><br>-->
+			<span class="tipszk_wzsan">B户型：2017-11-20 10:15 至 2017-11-20 10:18</span><br>
+			<span class="tipszk_wzsan">C户型：2017-11-20 10:15 至 2017-11-20 10:18</span><br>
+			<span class="tipszk_wzsan">D户型：2017-11-20 10:15 至 2017-11-20 10:18</span><br>
+		</p>
+		<p class="tipszk_wzyi">3、未在本活动规定时间内点击抽房的客户，视为自动放弃本次团购房资格。</p>
+		<p class="tipszk_wzyi">4、本活动本着公平、公正的原则有序进行，（未选到的房源会自动进入到对应的房型池中）在规定的时间内点击抽房的概率是一致的。</p>
+		<p class="user_type" style="color: #FF0000;">提示：您是  类用户仅可选  类房源</p>
+		<a class="tipszk_iknow" href="javascript:void(0)" id="tipsIknow">我知道了</a>
+    </div>
+</body>
+
+</html>

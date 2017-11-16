@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="-1">
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<title>密码开门</title>
+	</head>
+	<body>
+		<div class="page-group">
+			<!-- 单个page ,第一个.page默认被展示-->
+			<div class="page" id="router1">
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 id="asdtemp" class='title'>密码开门</h1>
+				</header>
+				<div class="content">
+					
+				</div>
+
+				<script type="text/javascript">
+					$.ajax({
+					  url: "../js/page.js",
+					  dataType: "script",
+					  success: function(response){
+					  }
+					});
+				</script>
+			</div>
+		</div>		
+	</body>
+</html>

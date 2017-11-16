@@ -1,0 +1,100 @@
+@media only screen and (max-width: 359px){html{font-size:14px;}}
+@media only screen and (min-width: 360px){html{font-size:16px;}}
+a{color:#ee702b;}
+ul,li,h1,h2,h3,h4,h5,h6,b,i{margin:0; padding:0; list-style:none; font-style:normal; font-weight:normal;}
+body{margin:0; padding:0; padding-bottom:1rem; background:#a91722; /*max-width:640px;*/ margin:0 auto; position:relative; max-width:640px; margin:0 auto;}
+.lucky{width:100%; height:1.8rem; background:#2e1415; color:#f9694e; font-size:0.85rem;position: relative;}
+.lucky img{position:absolute; top:2%; left:3%;}
+.star{position: absolute;width:90%;margin-left:5%;top:1.8rem;left:0;animation:run 2.5s infinite; -webkit-animation:run 2.5s infinite; -moz-animation:run 2.5s infinite; -o-animation:run 2.5s infinite;}
+.news{width:15rem; margin:0 auto; overflow:hidden; /*border:1px solid blue;*/}
+.tip{width:60rem; height:1.8rem; line-height:1.8rem; margin:0 auto; /*border:1px solid pink;*/}
+.tip li{width:15rem; /*border:1px solid green; */float:left; text-align:center;}
+.header_t{width:100%; position:relative;}
+.rule_down{position:absolute; top:0; right:4%; cursor:pointer;z-index: 2;}
+.top_all{color:#ee702b; width:100%;}
+.top_l{float:left; margin-left:0.5rem; cursor:pointer;}
+.top_r{float:right; position:relative; margin-right:1.3rem; cursor:pointer;}
+.game_num{color:#fff;}
+.arr{position:absolute; top:50%; right:-0.8rem; margin-top:-4.5px;}
+.turntable{width:100%; margin:0% auto; position:relative;/* border:1px solid green;*/ overflow:hidden;}
+.rotate{/*position:absolute; margin-left:7%; margin-top:6.5%;*/margin:0 0 6.5% 7%;}
+.btn{position:absolute; top:30%; left:40%; z-index:2; cursor:pointer;}
+.show_ruler{position: absolute;top:0;left:0;background-color: #feda46;font-size:1.3rem;width: 1.5rem;line-height: 1.7rem;text-align: center;font-weight: 700;padding:0.2rem ;border-top-right-radius: 0.3rem;border-bottom-right-radius: 0.3rem;}
+.turntable_msg{position: absolute;color:white;font-weight: 700;top:8%;right:4%;transform:rotate(45deg);font-size: 1.2rem;}
+/*蒙版*/
+.meng{position:absolute; top:0; width:100%; height:100%; background:rgba(19,18,18,0.7); display:none; z-index:999;max-width: 640px;}  
+.rule_all{position:relative; width:100%; color:#8f360c; }
+.rule{width:96%; background:#e7672a; padding:2%;}
+.rule h1{text-align:center; font-size:1.2rem;}
+.rule ul{margin:0.6rem 0 0.8rem;}
+.rule_up{position:absolute; right:2%; cursor:pointer;}
+/*.rule_all{position:fixed; width:76%; color:#8f360c; top:12%;left:12%;max-width: 486px;}
+.rule{width:96%; background:#f9ecb8; padding:2%;padding-top: 10%;border-radius: 0.5rem;margin-top:-11%;}
+.rule h1{text-align:center; font-size:1.2rem;}
+.rule ul{margin:0.6rem auto 0.8rem;font-size: 1rem;width: 90%;line-height: 1.5rem;}
+.ruler_top{width: 120%; margin-left:-10%;}
+.ruler_conf{width: 60%;margin:0.5rem auto 0;letter-spacing: 0.5rem;text-align: center;font-size: 1.4rem;padding:0.5rem 0;border-radius: 1.2rem;border-bottom: 3px solid #ff8800;background-color: #ffde00;font-weight: 700;}*/
+
+/*新闻*/
+.news_out{position:absolute; left:20%; width:60%; overflow:hidden;height:1.0rem; line-height:1.0rem; font-size:0.85rem; margin:0.4rem auto 3px; border-left:1px solid #5b0522; /* background:#fff; *//*  border:1px solid blue; */ /*float:right;*/ color:#ffe532;}
+.news_in{overflow:hidden;}
+.news{width:100%; /* border:1px solid green; */ white-space:nowrap;overflow:hidden;}
+.news li{/* float:left; */ margin:0 20px 0 0; display:inline-block;}
+.prize{color:#fff;}
+/*弹窗1*/
+.meng_out{position:fixed; top:12%; width:100%; max-width:640px; margin:0 auto;}
+.msg_wrap{position: absolute;width: 100%;left: 0;top:12%;text-align: center;font-weight: 700;color:#fff;}
+.top_msg,.top_msg2{font-size: 1.7rem;}
+.prize_img{margin:3% auto 0;width: 42%;}
+.prize_msg{font-size: 1.3rem;color:#704f22;width: 82%;margin:0 auto 2%;}
+.get_btn2{width: 50%;padding:2% 0;margin:3% auto;background-color: #fe0201;border-radius: 0.4rem;border-bottom:4px solid #ae0404;font-size: 1.7rem;letter-spacing: 3px;}
+.close{width: 8%;position: absolute;right:4%;top:8%;}
+.meng_msg{position: absolute;top:100%;left:8%;width: 84%;color:#c0910a;}
+/*弹窗2*/
+/*.meng2{display:block;}*/
+.prize_msg2{font-size: 1.3rem;color:#704f22;width: 80%;margin:22% auto 12%;}
+/* 晒单图片 */
+.ft_down {margin-top:-2%;font-size: 0;}
+.ft_down img{display:block;margin-top:-1px;}
+.ft_download{display:block; width:90%; margin:0 auto; padding:3% 0; text-align:center; background:#d7d504; border-radius:10px; border-bottom:4px solid #e28c03; color:#0e0603; font-size:1.5rem; font-weight:bold; font-family:'黑体'; white-space:10px; letter-spacing:1px;}
+.btn_rule{width:90%; margin:8% auto 5%; background:#8a1818; padding:2%; border-radius:8px; color:#faf4dc; font-size:0.9rem;}
+.btn_rule li:first-child{font-size:1.05rem;}
+.btn_rule li{ margin:0.2rem 0;}
+
+@keyframes run{
+    0%{width:90%; margin-left:5%;}
+    50%{width:100%; margin-left:0;}
+    100%{width:90%; margin-left:5%;}
+}
+@-webkit-keyframes run{
+    0%{width:90%; margin-left:5%;}
+    50%{width:100%; margin-left:0;}
+    100%{width:90%; margin-left:5%;}
+}
+@-moz-keyframes run{
+    0%{width:90%; margin-left:5%;}
+    50%{width:100%; margin-left:0;}
+    100%{width:90%; margin-left:5%;}
+}
+@-o-keyframes run{
+    0%{width:90%; margin-left:5%;}
+    50%{width:100%; margin-left:0;}
+    100%{width:90%; margin-left:5%;}
+}
+
+.share_container_out{/* background:#fff; */ overflow:hidden;}
+.share_container img{ display:block;width:100%; height:auto;}
+.img_full_width {display:block; width: 90%; margin:0 auto;}
+.latest_container {margin: 7px 0px; background-color:#7d1f1c; overflow: hidden; border-radius:3px;/*  border-bottom:1px solid #421802; */ }
+.user_info {padding: 0.6rem 1rem; overflow: hidden;}
+.user_info .left {float: left;width:3.2rem; height: 3.2rem; border-radius:100%; overflow:hidden;}
+.user_info .right {float: left; margin-left: 0.5rem; margin-top: 0.15rem; width: 75%; color:#481000; line-height:1.2rem;}
+.nickname {color: #ffe98f;}
+.nickname_out{ width:100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.avatar { width: 3.2rem; border-radius: 0.3rem;}
+.prize_name {color:#ffe98f; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.video_image {padding: 0 0rem 0.5rem 0rem; margin: 0rem -0.3rem;}
+.share_container { padding: 0px 10px; margin: 0px; overflow: hidden; /*height: 700px;*/ position:relative;}
+.content_btm{width:94%; margin:0 auto;/*  border:1px solid red; */ color:#eb6e5d;/* color:#ffc09d; */ line-height:1.2rem; font-size:0.95rem;}
+.content_btm .imgs {margin-top: 8px;} 
+.content_btm .imgs img { display:inline-block;width: 31%; margin: 1.1%; float:left;}

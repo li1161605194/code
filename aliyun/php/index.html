@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8 />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, target-densityDpi=device-dpi" />
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="email=no" name="format-detection">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="baidu-site-verification" content="1PWV072mtt" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>偷得浮生半日闲</title>
+    <link rel="stylesheet" type="text/css" href="res/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="res/css/common.css">
+</head>
+
+<body class="">
+    <img src='http://lstcode.applinzi.com/res/img/wxshare/wxshare.jpg' width="0" height="0" />
+    <section class="bffbjk zminh">
+        <nav>
+            <span class="loveTime"><span class="loveDateTime"></span></span>
+        </nav>
+        <div>
+            <textarea id="userinfo"></textarea>
+        </div>
+        <div>
+            <a href="javascript:getUserName()">得到用户姓名</a>
+            <a href="javascript:insertUserName()">新添加</a>
+        </div>
+    </section>
+    <script type="text/javascript" src="../res/js/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+    })
+
+    getUserName = function() {
+        $.ajax({
+            url: "mysql.php",
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                "type": "selectUser"
+            },
+            success: function(res) {
+                console.info(res);
+            }
+        });
+    }
+    insertUserName = function() {
+        $.ajax({
+            url: "mysql.php",
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                "type": "insertUser",
+                "userInfo":{
+                    name:"qwe",
+                    pwd:"qwe"
+                }
+            },
+            success: function(res) {
+                console.info(res);
+            }
+        });
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"  />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="section">
+  <view class="userinfo flex-wrp" style="flex-direction:column;height:300rpx;">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="user-motto">{{motto}}  {{res.fullname}}</text>
+  </view>
+  <view class="userlist flex-wrp" style="flex-direction:column;">
+    <image class="user_icon" background-size="cover" src="{{res.user_icon}}"></image>
+    <text>介绍:{{res.miaoshu}}</text>
+  </view>
+  <view class="flex-wrp" style="flex-direction:column;">
+    <text>地址:{{res.dizhi}}</text>
+  </view>
+  <view class="flex-wrp" style="flex-direction:column;">
+    <text>手机:{{res.tel}}</text>
+  </view>
+  <view class="flex-wrp" style="flex-direction:column;">
+    <text>QQ:{{res.qq}}</text>
+  </view>
+  <view class="flex-wrp" style="flex-direction:column;">
+    <text>出生日期:{{res.date}}</text>
+  </view>
+</view>

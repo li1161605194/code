@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="cache">
+	<title>海报制作发布</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="../res/css/font-awesome.min.css">
+</head>
+<body>
+	<div>
+		<div>
+			<div class="content_fabu">
+				<div class="fabu_content">
+					<div class="showfabuzk">
+						<div class="showphonezwk">
+							<iframe style="overflow:hidden;" scrolling="yes" frameborder="no" width="100%" height="100%" src="http://wx2.gongyibao.cn/"></iframe>
+						</div>
+					</div>
+					<div class="showsharezk">
+						<ul>
+							<li>
+								<p class="savefabu_title">发布成功！</p><span class="closecha fa fa-close"></span>
+								<div style="clear: both;"></div>
+							</li>
+							<li>
+								<p class="zj_share_title_common">通过以下方式可分享给更多的朋友:</p>
+								<div class="shareimgk">
+									<div class="shareimg yi"></div>
+									<span>扫描二维码分享</span>
+								</div><div class="shareimgk">
+									<div class="shareimg er"></div>
+								</div>
+							</li>
+							<li>
+								<p class="zj_share_title_common">通过链接分享</p>
+								<a class="share_alink" href="javascript:void(0)">http://www.houpukeji.com/index.html</a><a class="copy_alink" href="javascript:void(0)">复制链接</a>
+							</li>
+							<li>
+								<a id="hbsave" class="zj_save_alink" href="javascript:void(0)">再修改一下</a><a id="hbfabu" style="margin-left: 30px;" class="zj_save_alink" href="javascript:void(0)">发邮件</a><a id="hbfabu" style="margin-left: 30px;" class="zj_save_alink" href="javascript:void(0)">发短信</a>
+							</li>
+						</ul>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../res/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(document).on("click","#hbsave",function(){
+				$(".masks").css("display","none");
+				$(".save_content_dwk").css("display","none");
+			});
+			$(document).on("click","#hbfabu",function(){
+				$(".masks").css("display","none");
+				$(".save_content_dwk").css("display","none");
+			});
+		})
+	</script>
+</body>
+</html>

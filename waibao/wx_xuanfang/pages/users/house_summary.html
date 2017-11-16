@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<script>
+			var initParams = {
+				"css": [],
+				"js": ["js/users/house_summary.js"],
+				"title": "房源概况"
+			};
+		</script>
+		<script src="../../js/init.js"></script>
+		<title></title>
+	</head>
+
+	<body ontouchstart>
+		<div class="page">
+			<div class="page_bd">
+				<div class="weui-tab">
+					<div class="weui-tab_panel">
+						<p class="user_tips" style="display: none;">提示：您为<em class="user_info_type">&nbsp;</em>类用户，下图显示<em class="user_info_type">&nbsp;</em>类房源概况</p>
+						<p class="house_summary_tips"><em class="user_info_type">&nbsp;</em>类房源概况：共<span id="houseTotalCount">&nbsp;</span>套，剩<span id="houseRemainCount">&nbsp;</span>套</p>
+						<div class="room_container">
+							<p class="summary_title">房源信息</p>
+							<ul class="ridge_container">
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

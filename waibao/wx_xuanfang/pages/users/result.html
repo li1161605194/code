@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<script>
+			var initParams = {
+				"css": [],
+				"js": ["js/users/result.js"],
+				"title": "选房结果"
+			};
+		</script>
+		<script src="../../js/init.js"></script>
+		<title></title>
+	</head>
+
+	<body ontouchstart>
+		<div class="page">
+			<div class="page_bd">
+				<div class="weui-tab">
+					<div class="weui-tab_panel">
+						<div class="result_zk">
+							<div class="result_houseimgk">
+								<img class="result_houseimg" src="../../img/fangxingtu.jpg" />
+							</div>
+							<div class="result_housenumk">
+								<p class="result_num"></p>
+							</div>
+							<div class="result_house_mjk">
+								<p class="result_house_mj">
+									<span class="mj_fgk">
+										<span class="mj_wz">面积</span>
+										<span class="mj_num">约<em id="roomMJ"></em>㎡</span>
+									</span>
+									<span class="mj_fgk">
+										<span class="mj_wz">单价</span>
+										<span class="mj_num">￥<em id="roomDJ"></em>/㎡</span>
+									</span>
+								</p>
+							</div>
+							<div class="remark">
+								<p class="remark_wzyi">您已成功抽取到<em id="roomLH"></em></p>
+								<p class="remark_wzyi">总房价：￥<em id="roomZJ"></em></p>
+								<p class="remark_wzyi">请于2017年11月20号到管委会补交房款。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

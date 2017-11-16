@@ -1,0 +1,131 @@
+@charset "UTF-8";
+html,body,div,p,nav,img,input,a,span,i,em,ul,li,table,tr,td,
+*{font-family:微软雅黑;position:relative;border:0;margin:0;padding:0;font-style:normal;font-weight:normal;list-style:none;text-decoration:none;background-repeat:no-repeat;}
+html{font-size:14px;font-family:微软雅黑;}
+html,body{overflow-x: hidden;min-width: 320px;}
+a,a:hover{-webkit-tap-highlight-color:transparent}
+.tac_bd{text-align: center;}
+.tal_bd{text-align: left;}
+.tar_bd{text-align: right;}
+.fontwb{font-weight: bold;}
+.fln_bd{float: none;}
+.fll_bd{float: left;}
+.flr_bd{float: right;}
+.ov_h{overflow: hidden;}
+.bg_hui{background-color: #f5f7f9; }
+.bffbjk{background-color: #fff;}
+.bhuibjk{background-color: #f5f4f4;}
+.clearfix:before,.clearfix:after{content: "";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:-1;}
+.layout:before,.layout:after{content:""; clear:both; display:block; height:0; visibility:hidden;}
+.layout{zoom:-1;}
+.word{overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+.juzhong_cz{-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;align-items:center;}
+
+.img_dwk_common{width: 100%;}
+.img_common{width: 100%;}
+.imgbg_common{width: 100%;background-position: center center;background-size: contain;}
+
+.bgimg4_3{width: 100%;height: 0;padding-bottom: 75%;background-position: center center;background-size: contain;}
+.bgimg7_3{width: 100%;height: 0;padding-bottom: 42.86%;background-position: center center;background-size: contain;}
+
+
+
+
+.w94{width: 94%;margin: 0 auto;}
+.mt20{margin-top: 20px;}
+.fengexian{width: 100%;height: 1px;border-bottom: solid 1px #e5e5e5;margin: 10px auto;}
+.fengetiao{width: 100%;height: 20px;background-color: #f5f4f4;margin: 0px auto;}
+/* loading */
+.title_yi{width: 100%;text-align: center;color: #000;font-size: 18px;font-weight: bold;line-height: 42px;margin-top: 20px;margin-bottom: 30px;}
+.wenzi_yi{width: 100%;text-align: center;color: #333;font-size: 18px;margin-top: 20px;}
+.invte_img{width: 90%;display: block; margin: 0 auto;}
+
+/*音乐会介绍*/
+.wenzi_er{font-size: 14px;color: #666;line-height: 24px;text-indent: 28px;margin-top: 14px;}
+a.tick_alink{display: inline-block;width: 40%;height: 45px;line-height: 45px;border-radius: 8px;color: #fff;font-size: 16px;margin-bottom: 10px;}
+a.tick_alink.left{background-color: #ff9900;margin-right: 10px;}
+a.tick_alink.right{color: #ff9900;border: solid 1px #ff9900;margin-left: 10px;}
+.anniudwk{position: fixed;bottom: 0;left: 0;z-index: 999;border-top: solid 1px #e5e5e5;padding-top: 10px;background-color: #fff;}
+
+/* 音乐票 */
+.ticke_dwk{}
+a.ticke_imgbg{display: block;width: 100%;margin-bottom: 0px;position: relative;}
+img.ticke_img{}
+.ticke_name{position: absolute;top: 30%;left: 10%;font-size: 20px;color: #000;font-weight: bold;}
+.ticke_num{font-size: 14px;color: #ff9900;margin-left: 20px;}
+
+/* 报名 填写信息*/
+.shuruk{width: 100%;height: 62px;line-height: 62px;border-bottom: solid 1px #e5e5e5;}
+.name{display: inline-block; width: 50px;font-size: 16px;color: #000; height: 60px;line-height: 60px;font-weight: bold;}
+input.shuruinput{border: solid 0 red;height: 60px;line-height: 60px;width:75%;font-size: 16px;}
+.submit_alink{margin-top: 50px; width: 100%;height: 45px;line-height: 45px;display: block;font-size: 18px;color: #fff;background-color: #ff9900;border-radius: 6px;text-align: center;}
+
+/* 领票成功 */
+.successimg{width: 100%;position: absolute;top: 0;left: 0;z-index: 99; display: block;margin: 0 auto;}
+.lp_cgzk{margin-top: 12%;min-height: 320px;padding-top: 8%;background-image: url(../img/3002.png);background-position: center bottom;padding-bottom: 20px;}
+.lpwzyi{font-size: 17px;color: #000;font-weight: bold;width: 100%;text-align: center;margin-bottom: 20px;}
+.lpwzkline{font-size: 16px;line-height: 32px;}
+.lpwzkline span.left{min-width: 80px;display: inline-block;color: #333;}
+.lpwzkline span.right{color: #666;}
+.lpwzkline span.right.yi{color: #999;}
+.erweimaimg{width: 45%;margin: 0 auto;margin-top: 30px;margin-bottom: 20px;display: block;}
+
+/* 项目详情*/
+div.city_list_dwk.detail_banner{width: 100%;margin: 0;}
+.city_name_dwk{width: 100%;height: 45px;line-height: 45px;margin-top: -45px;background-color: rgba(102,102,102,0.2);}
+.city_name{color: #fff;font-size: 18px;text-align: left;margin-left: 15px;opacity: 1;}
+.numdwk_common{display: inline-block;width: 33.33%;text-align: center;padding: 15px 0;}
+.numdwk_common.yi{width: 26%;}
+.numdwk_common.er{width: 36.99%;}
+.numdwk_common.san{width: 36.99%;}
+.numdwk_common span{display: block;width: 100%;text-align: center;font-size: 16px;color: #000;font-weight: bold;line-height: 32px;}
+.numdwk_common span.num{color: #ff9900;}
+.numdwk_common span.num em{color: #000;}
+.xm_gslie_common{padding: 0px 3%;height: 90px;vertical-align: middle;}
+.logoimgk{display: inline-block;width: 12%;margin-right: 3%;height: 90px; line-height: 90px; vertical-align: middle;}
+.logoimg{max-height: 90px;vertical-align: middle;}
+.xm_namegs{display: inline-block;width: 84%;vertical-align: middle;}
+.xm_namegs span{font-size: 16px;color: #333;display: block;line-height: 24px;}
+.xm_namegs span em.xm_gsnum{font-size: 14px;color: #ff9900;display: block;}
+.xm_wzyi{color:#999; font-size:16px;padding: 10px;}
+a.xmjuankuan{width: 100%;display: block;text-align: center;background-color: #ff9900;color: #fff;font-size: 18px;padding: 12px 0;position: fixed;bottom: 0;left: 0;}
+.jk_success{width: 90%;background-color: transparent;position: fixed;top: 10%;left: 5%;z-index: 999;display: none;}
+.close_box{color: #fff;background-color: transparent;font-size: 30px;width: 100%;text-align: right;margin-bottom: 30px;}
+.jk_box{width: 90%;background-color: #fff;border-radius: 6px;padding: 20px 5%;}
+.jk_box_imgk{background-image: url(../img/4001.png);width: 80%;margin: 0 auto;background-size: contain;background-position: center center;height: 60px;}
+.jk_box_wz{width: 100%;text-align: center;color: #fff;font-size: 16px;line-height: 38px;}
+.jk_box_neir{color: #666;font-size: 16px;line-height: 28px;margin-bottom: 15px;}
+.jk_box_alink{width: 90%;display: block;margin: 0 auto;color: #fff;background-color: #ff9900;font-size: 16px;padding: 12px 0;text-align: center;border-radius: 4px;}
+.zhezhao{width: 100%;height: 100%;background-color: rgba(102,102,102,0.3);position: fixed;top: 0;left: 0;display: none;}
+
+
+
+
+/* 公司介绍*/
+.gsimg{width: 45%;display: block;margin: 30px auto 0 auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

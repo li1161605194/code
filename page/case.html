@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta name="application-name" content="李石涛杨歌">
+		<title>web-js-小技巧-code</title>
+		<link rel="shortcut icon" href="http://lstcode.applinzi.com/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../res/css/common/common.css" />
+	</head>
+	<body>
+		<div oncontextmenu="window.event.returnValue=false" data-funName="oncontextmenu" class="function-border-eve">
+			<p class="common-sm">彻底屏蔽鼠标右键</p>
+			<input id="oncontextmenu" type="text" value="彻底屏蔽鼠标右键" />
+		</div>
+		<div onselectstart="return false" data-funName="onselectstart" class="function-border-odd">
+			<p class="common-sm">取消选取、防止复制</p>
+			<p class="common-sm">取消选取、防止复制,取消选取、防止复制,取消选取、防止复制</p>
+			<p class="common-sm">取消选取、防止复制,取消选取、防止复制,取消选取、防止复制,取消选取、防止复制</p>
+			<p class="common-sm">取消选取、防止复制,取消选取、防止复制,取消选取、防止复制</p>
+			<input id="onselectstart" type="text" value="取消选取、防止复制" />
+		</div>
+		<div onpaste="return false" data-funName="onpaste" class="function-border-eve">
+			<p class="common-sm">不允许粘贴</p>
+			<input id="onpaste" type="text" value="不允许粘贴" />
+		</div>
+		<div oncopy="return false" oncut="return false" data-funName="oncopy" class="function-border-odd">
+			<p class="common-sm">防止复制,剪切</p>
+			<input id="oncopy" type="text" value="防止复制,剪切" />
+		</div>
+		<div data-funName="view-source" class="function-border-eve">
+			<p class="common-sm">查看网页源代码</p>
+			<input id="view-source" onclick='window.location = "view-source:"+window.location.href' type="button" value="查看网页源代码" />
+		</div>
+
+	<script type="text/javascript" src="../res/js/common/require.js" data-main="../res/js/page/case" defer async="true" ></script>
+	</body>
+</html>

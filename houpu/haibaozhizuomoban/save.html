@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="cache">
+	<title>海报制作保存</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="../res/css/font-awesome.min.css">
+</head>
+<body>
+	<div>
+		<div>
+			<div class="content_save">
+				<div class="save_content">
+					<ul>
+						<li>
+							<p class="savefabu_title">发布前请完善海报信息</p><span class="closecha fa fa-close"></span>
+							<div style="clear: both;"></div>
+						</li>
+						<li class="mb15">
+							<p class="zj_share_title_common">海报缩略图</p>
+						</li>
+						<li class="mb30">
+							<div style="float: none;" class="hb_imgk">
+								<img class="hb_img" src="img/hb.jpg">
+								<span class="change_hbimg">更改封面</span>
+							</div>
+						</li>
+						<li class="mb15">
+							<p class="zj_share_title_common">海报标题</p>
+						</li>
+						<li class="mb30">
+							<input class="zj_share_bgcolor_common zj_share_common_wh" type="text" value="">
+						</li>
+						<li class="mb15">
+							<p class="zj_share_title_common">海报描述</p>
+						</li>
+						<li class="mb30">
+							<textarea style="height: 110px;" class="zj_share_bgcolor_common zj_share_common_wh"></textarea>
+						</li>
+						<li>
+							<a id="hbsave" class="zj_save_alink" href="javascript:void(0)">保存</a><a id="hbfabu" style="margin-left: 30px;" class="zj_save_alink" href="javascript:void(0)">发布</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../res/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(document).on("click","#hbsave",function(){
+				$(".masks").css("display","none");
+				$(".save_content_dwk").css("display","none");
+			});
+			$(document).on("click","#hbfabu",function(){
+				$(".masks").css("display","none");
+				$(".save_content_dwk").css("display","none");
+			});
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择海报</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/haibaoyulan_tanchu.css">
+</head>
+<body>
+	<div class="hb_dwzk">
+		<div class="hb_bjzk">
+			<div class="hb_content">
+				<p class="hb_wz_yi">选择你需要的海报</p>
+				<p class="hb_wz_page">海报总数:<em id="zonggeshu">50</em>&nbsp;&nbsp;&nbsp;当前<em id="dq_pagenum">1</em>/<em id="pagenum">17</em></p>
+				<div class="hblistzkdwbjk">
+					<span class="hb_left fa fa-chevron-left"></span>
+					<div class="hbyzdwk">
+						<div class="hb_list_commonzk">
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">11111111</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">222222</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">3333333</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">444444444</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">55555555555</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">66666666666</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">77777777777</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">888888888888888</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">9999999999</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">1010101010</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">11111111111111111</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">1212121212</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">13131313131</p>
+							</div>
+							<div class="hb_list_common">
+								<div class="hb_img_tuk"><img class="hb_img_tu" src="http://mall.leyijuan.com/Storage/Shop/261/Products/501/1_350.png"></div>
+								<p class="hb_wz_er">141414141414</p>
+							</div>
+						</div>
+					</div>
+					<span class="hb_right fa fa-chevron-right"></span>
+				</div>
+				<a class="hb_alink" href="">确定</a>
+			</div>
+		</div>
+	</div>
+	<input id="dq_page" value="1" type="hidden" style="display: none;" >
+	<script type="text/javascript" src="../../res/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		var fleg=1;
+		$(function(){
+			$("#zonggeshu").html($(".hb_list_common").size());
+			$("#pagenum").html(Math.ceil($(".hb_list_common").size()/3));
+			$("#dq_pagenum").html("1");
+			$(".hb_list_commonzk").width($(".hb_list_common").size()*228);
+			$(document).on('click', '.hb_left', function(event) {
+				if(fleg==1){
+					fleg=2;
+					pageleft($(this));
+					event.preventDefault();
+				}
+			});
+			$(document).on('click', '.hb_right', function(event) {
+				if(fleg==1){
+					fleg=2;
+					pageright($(this));
+					event.preventDefault();
+				}
+			});
+			$(document).on("click",".hb_img_tuk",function(event){
+				$(".hb_img_tuk").removeClass('xuanz');
+				$(this).addClass('xuanz');
+				event.preventDefault();
+			})
+		})
+		function pageleft(_this){
+			if(parseInt($("#dq_page").val())==1){
+				alert("已经是第一页了");
+			}else{
+				$(".hb_list_commonzk").animate({left:parseInt($(".hb_list_commonzk").position().left)+688+"px"},1500);
+				$("#dq_page").val(parseInt($("#dq_page").val())-1);
+				$("#dq_pagenum").html(parseInt($("#dq_page").val()));
+				if(parseInt($("#dq_page").val())==1){
+				}
+			}
+			setTimeout(function(){fleg=1;},1500);
+		}
+		function pageright(_this){
+			if(parseInt($("#dq_page").val())>=Math.ceil($(".hb_list_common").size()/3)){
+				alert("最后一页了");
+			}else{
+				$(".hb_list_commonzk").animate({left:-688*parseInt($("#dq_page").val())+"px"},1500);
+				$("#dq_page").val(parseInt($("#dq_page").val())+1);
+				$("#dq_pagenum").html(parseInt($("#dq_page").val()));
+				if(parseInt($("#dq_page").val())>=Math.ceil($(".hb_list_common").size()/3)){
+				}
+			}
+			setTimeout(function(){fleg=1;},1500);
+		}
+	</script>
+</body>
+</html>

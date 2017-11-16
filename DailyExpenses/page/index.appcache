@@ -1,0 +1,13 @@
+CACHE MANIFEST
+#注释 文件index.manifest
+CACHE:
+../../res/css/font-awesome.min.css
+../res/assets/css/amazeui.min.css
+../../res/css/common.css
+../res/assets/amazeui.touch.min.css
+../../res/js/jquery.min.js
+../res/assets/js/amazeui.min.js
+../../res/js/unit/layer/layer.min.js
+
+NETWORK:
+*

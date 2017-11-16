@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="application-name" content="李石涛杨歌">
+    <link rel="stylesheet" href="../res/css/common/common.css" />
+    <title>web-bug-兼容-code</title>
+    <link rel="shortcut icon" href="http://lstcode.applinzi.com/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div data-funName="getMaxWidth" class="function-border-eve">
+        <p class="eg-p-width" style="width: 100px;">123</p>
+        <p class="eg-p-width" style="width: 400px;">123123123132</p>
+        <p class="eg-p-width" style="width: 300px;">123123</p>
+        <p class="eg-p-width" style="width: 20px;">12</p>
+        <p class="eg-p-width" style="width: 150px;">123123123</p>
+        <input id="getMaxWidth" type="button" value="获得最宽的p元素的宽" />
+    </div>
+    <div data-funName="getMaxHeight" class="function-border-odd">
+        <p class="eg-p-height">123</p>
+        <p class="eg-p-height">123
+            <br>12312
+            <br>31
+            <br>32</p>
+        <p class="eg-p-height">123
+            <br>123</p>
+        <p class="eg-p-height">12
+            <br>
+            <br>
+            <br>
+        </p>
+        <p class="eg-p-height">1231231
+            <br>23</p>
+        <input id="getMaxHeight" type="button" value="获得最高的p元素的高" />
+    </div>
+    <div data-funName="highlight" class="function-border-eve">
+        <p id="highlight-p">This is a highlight of the text, you can put the need to highlight the selected settings highlighted text.</p>
+        <input id="highlight" type="button" value="点击变高亮" />
+        <input id="unhighlight" type="button" value="点击去除高亮" />
+    </div>
+    <div data-funName="actionNotice" class="function-border-odd">
+        <input id="actionNotice1" type="button" value="点击弹出提示信息1" />
+        <input id="actionNotice2" type="button" value="点击弹出提示信息2" />
+        <input id="actionNotice3" type="button" value="点击弹出提示信息3" />
+    </div>
+    <div data-funName="transferNumChinese" class="function-border-eve">
+        <input id="yuannum" type="text" placeholder="必须是正整数" />
+        <br />
+        <input id="chinesenum" type="text" disabled="disabled" readonly="readonly" style="width: 600px;" />
+        <input id="transferNumChinese" type="button" value="点击转换" />
+    </div>
+    <div data-funName="postFormAjax" class="function-border-odd">
+        <textarea id="dataContent"></textarea>
+        <br />
+        <input id="postFormAjax" type="button" value="点击post跨域请求" />
+        <iframe id="postTemp" name="postTemp" style="overflow:hidden;" scrolling="no" frameborder="no" width="100%" height="100%">
+            <script type="text/javascript">
+            window.onload = function() {
+                window.frames[0].postMessage('getcolor', '*');
+            }
+            </script>
+        </iframe>
+        <form target="postTemp" id="postbd" action="http://www.360dididai.com/market/search-notes?loan_type=0&page=0&page_size=1" method="post">
+        </form>
+    </div>
+    <div class="function-border-eve">
+        <section id="wrapper">
+            <header>
+                <h1>postMessage （跨域）</h1></header>
+            <article>
+                <form>
+                    <p>
+                        <label for="message">给iframe发一个信息：</label>
+                        <input type="text" name="message" id="message" />
+                        <input id="asd" type="button" value="提交" />
+                    </p>
+                </form>
+                <h4>目标iframe传来的信息：</h4>
+                <p id="test">暂无信息</p>
+                <iframe id="iframe" src="ifram.html"></iframe>
+            </article>
+        </section>
+        <script type="text/javascript">
+        window.onload=function(){
+        	document.getElementById("asd").addEventListener("click",function(){
+        		var win = document.getElementById("iframe").contentWindow;
+        document.querySelector('form').onsubmit = function(e) {
+            win.postMessage(document.getElementById("message").value, "*");
+            if (e.preventDefault) {
+                e.preventDefault();
+            }
+            e.returnValue = false;
+        }
+        	},false);
+        }
+        var win = document.getElementById("iframe").contentWindow;
+        document.querySelector('form').onsubmit = function(e) {
+            win.postMessage(document.getElementById("message").value, "*");
+            if (e.preventDefault) {
+                e.preventDefault();
+            }
+            e.returnValue = false;
+        }
+        </script>
+    </div>
+    <script type="text/javascript" src="../res/js/common/require.js" data-main="../res/js/page/index" defer async="true"></script>
+    <script type="text/javascript">
+    window.addEventListener('message', function(e) {
+        console.log(e.origin, e.data);
+        //alert('父页面有数据传来了！');
+    });
+    </script>
+</body>
+
+</html>

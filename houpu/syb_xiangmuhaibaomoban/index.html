@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>项目详情海报模板</title>
+	<link href="css/main.css"  type="text/css" rel="stylesheet"/>
+	<style type="text/css">
+		.zk{width: 600px;margin: 0 auto;}
+		.zuobianmenu{width: 160px;float: left;border: solid 1px #e5e5e5;}
+		.zuobianmenu a{display: block;padding: 15px 25px;background-color: #e5e5e5;color: #000;font-size: 18px;}
+		.zuobianmenu a:hover,.zuobianmenu a.xuanz{background-color: #317ee6;color: #fff;}
+		.content{width: 375px;height: 667px; float: left;}
+		.hidescroll{width: 375px;overflow-x: hidden;border: solid 1px #333;}
+	</style>
+</head>
+<body>
+<div class="zk">
+	<div class="zuobianmenu">
+		<a class="xuanz" target="hbmbFrm" href="hb_style_yi.html">版式一</a>
+		<a target="hbmbFrm" href="hb_style_er.html">版式二</a>
+		<a target="hbmbFrm" href="hb_style_san.html">版式三</a>
+		<a target="hbmbFrm" href="hb_style_si.html">版式四</a>
+		<a target="hbmbFrm" href="hb_style_wu.html">版式五</a>
+		<a target="hbmbFrm" href="hb_style_liu.html">版式六</a>
+		<a target="hbmbFrm" href="hb_style_qi.html">版式七</a>
+		<a target="hbmbFrm" href="hb_style_ba.html">版式八</a>		
+		<a target="hbmbFrm" href="hb_style_jiu.html">版式九</a>		
+	</div>
+	<div class="content">
+		<div class="hidescroll">
+			<iframe name="hbmbFrm" style="overflow:hidden;" scrolling="yes" frameborder="no" width="392" height="667"  src="hb_style_yi.html"></iframe>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+</div>
+<script type="text/javascript" src="../res/js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(document).on("click",".zuobianmenu a",function(){
+			$(".zuobianmenu a").removeClass("xuanz");
+			$(this).addClass("xuanz");
+		})
+	})
+</script>
+</body>
+</html>

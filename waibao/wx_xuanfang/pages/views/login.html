@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<script>
+			var initParams = {
+				"css": [],
+				"js": ["js/views/login.js"],
+				"title": "登录"
+			};
+		</script>
+		<script src="../../js/init.js"></script>
+		<title></title>
+	</head>
+
+	<body ontouchstart>
+		<div class="page">
+			<div class="page_bd">
+				<div class="weui-tab">
+					<div class="weui-tab_panel">
+						<div class="weui-cells weui-cells_form">
+							<div class="weui-cell weui-cell_vcode">
+								<div class="weui-cell__hd">
+									<label class="weui-label">手机号</label>
+								</div>
+								<div class="weui-cell__bd">
+									<input class="weui-input" name="mo" type="number" placeholder="请输入手机号">
+								</div>
+								<div class="weui-cell__ft">
+									<button id="send_sms" class="weui-vcode-btn">获取验证码</button>
+								</div>
+							</div>
+							<div class="weui-cell">
+								<div class="weui-cell__hd">
+									<label class="weui-label">验证码</label>
+								</div>
+								<div class="weui-cell__bd">
+									<input class="weui-input" type="text" name="code" placeholder="请输入验证码">
+								</div>
+							</div>
+							<div class="weui-cell">
+								<div class="weui-cell__hd">
+									<label class="weui-label">身份证号</label>
+								</div>
+								<div class="weui-cell__bd">
+									<input class="weui-input" type="text" name="idNo" placeholder="请输入身份证号">
+								</div>
+							</div>
+						</div>
+						<label for="weuiAgree" class="weui-agree">
+                            <input id="weuiAgree" type="checkbox" checked="checked" class="weui-agree__checkbox">
+                            <span class="weui-agree__text">
+                            阅读并同意<a href="javascript:void(0);">《天健湖壹号院选房相关条款》</a>
+                        </span>
+                        </label>
+						<div class="weui-btn-area">
+							<a class="weui-btn weui-btn_primary" href="javascript:void(0)" id="registerMember">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

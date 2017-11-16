@@ -1,0 +1,245 @@
+*,html,body,div,p,a,img,span,li,ul,em{ font-family: "微软雅黑";margin: 0;padding: 0;font-style: normal; -webkit-tap-highlight-color: transparent }
+
+html .content,body .content{position: relative;overflow: inherit;}
+.hide-input-common{border: dashed 0px #FFFFFF;background-color: transparent;opacity: 0;position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.no-info-sm-common{width: 100%;text-align: center;display: inline-block;font-size: 1rem;color: #1A1A1A;margin: 0 auto;margin-top: 5rem;}
+
+
+.swiper-alink {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide.yi {
+	height: 8rem;
+	background-image: url(../img/index/lun1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.swiper-slide.er {
+	height: 8rem;
+	background-image: url(../img/index/lun2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.swiper-slide.san {
+	height: 8rem;
+	background-image: url(../img/index/lun3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.swiper-container-horizontal> .swiper-pagination {
+	bottom: 0.8rem;
+}
+.content-padded {
+	margin: 0;
+}
+.row {
+	margin: 0;
+}
+.row .col-33 {
+	background-color: white;
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+.jiu-gong-ge-zk .row .col-33 {
+	width: 32.33333333333333333332%;
+	margin-top: 1%;
+}
+.jiu-gong-ge-zk .row .col-33:nth-child(1) {
+	margin-left: 0.5%;
+}
+.jiu-gong-ge-zk .row .col-33:nth-child(2) {
+	margin: 0 1%;
+	margin-top: 1%;
+}
+.jiu-gong-ge-zk .row .col-33:nth-child(3) {
+	margin-right: 0.5%;
+}
+.jiu-gong-ge-zk {
+	background-color: #FFFFFF;
+	padding-bottom: 1%;
+}
+.jiu-gong-ge-zk .jgg-imgk {
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20%;
+}
+.jgg-wzsmk {
+	display: block;
+	width: 96%;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	text-align: center;
+	font-size: 0.7rem;
+	color: #131313;
+}
+.lxwy-pzk {
+	width: 100%;
+	background-color: #FFFFFF;
+	height: 8rem;
+}
+.lxwy-pzk-img {
+	width: 25%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 8%;
+}
+.lxwy-pzk-smwz {
+	display: block;
+	width: 96%;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	text-align: center;
+	font-size: 0.7rem;
+	color: #aaa;
+}
+.lxwy-dhk {
+	height: 3rem;
+	line-height: 3rem;
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-image: url(../img/index/jgg/1/2.png);
+	background-size: 8%;
+	background-position: 5%;
+	margin-top: 0.4rem;
+	text-align: left;
+	vertical-align: middle;
+}
+.lxwy-dhk-tel-em-xiao {
+	font-size: 0.6rem;
+	color: #AAAAAA;
+}
+.lxwy-dhk-tel-em {
+	font-size: 0.8rem;
+	color: #111111;
+	margin-left: 15%;
+}
+
+
+.hht-hmk-hm{
+	width: 65%;
+	height: 3rem;
+	line-height: 4rem;
+	vertical-align: bottom;
+	text-align: left;
+	margin-left: 15%;
+	margin-top: 2%;
+	display: block;
+	float: left;
+	font-size: 2rem;
+	color: #4CD964;
+}
+.hht-hmk-delimg{
+	display: none;
+	z-index: 999;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+	width: 15%;
+	margin-top: 5%;
+}
+.jiu-gong-ge-bohaok{
+	width: 80%;
+	margin: 0 auto;
+}
+.jiu-gong-ge-bohaok .row .col-33 {
+	width: 33.33333333333333333332%;
+}
+.jiu-gong-ge-bohaok .jgg-imgk{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+.hht-baohao{
+	width:15%;
+	display: block;
+	margin: 0 auto;
+}
+.hht-helpusek{
+	margin: 3rem auto;
+	text-align: right;
+	width: 95%;
+}
+.hht-help{
+	width: 20%;
+	display: block;
+	float: right;
+}
+.hht-helpusek span{
+	font-size: 0.6rem;
+	display: block;
+	float: right;
+	width: 97%;
+	margin: 0 auto;
+	margin-right: 3%;
+}
+
+
+
+
+
+.layermbox {
+	display: none;
+    position: relative;
+    z-index: 19891014
+}
+.layermbox .laymshade {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: auto
+}
+.layermbox .layermmain{
+	width: 100%;
+	height: 9rem;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0;
+}
+.layermbox .layermmain .section{
+	width: 80%;
+	margin: 0 auto;
+}
+.layermbox .layermmain .section p.sec-pwz-commom{
+	opacity: 0.9;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.8rem;
+	text-align: center;
+	color: #007AFF;
+}
+p.sec-pwz-commom.pz{
+	border-radius:4px 4px 0 0;
+}
+p.sec-pwz-commom.xz{
+	border-top: solid 1px #d9d9d9;
+	border-radius: 0 0 4px 4px;
+}
+p.sec-pwz-commom.qx{
+	margin-top: 0.4rem;
+	border-radius: 4px;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

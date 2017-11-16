@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/test/test",
+    "pages/index/index",
+    "pages/icon/icon",
+    "pages/sheet/sheet",
+    "pages/sanzijing/sanzijing",
+    "pages/baijiaxing/baijiaxing",
+    "pages/qianziwen/qianziwen",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "木木子易",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle":"white",
+    "list": [{
+      "selectedIconPath": "images/112.png",
+      "iconPath": "images/11.png",
+      "pagePath": "pages/test/test",
+      "text": "首页"
+    }, {
+      "selectedIconPath": "images/222.png",
+      "iconPath": "images/22.png",
+      "pagePath": "pages/sheet/sheet",
+      "text": "诗词名句"
+    }, {
+      "selectedIconPath": "images/442.png",
+      "iconPath": "images/44.png",
+      "pagePath": "pages/index/index",
+      "text": "我"
+    }]
+  }
+}

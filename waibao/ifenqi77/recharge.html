@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="applicable-device" content="mobile">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="application-name" content="李石涛杨歌">
+<link rel="stylesheet" href="css/main.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/pay.js"></script>
+<title>充值页面</title>
+<link rel="shortcut icon" href="http://lstcode.applinzi.com/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<div class="pay-bjzk bd-w100">
+		<div class="pay-dwzk bd-w100">
+			<ul class="pay-ul-zk bd-w100">
+				<li class="pay-li-common bd-w100 yi">
+					<p style="background-color: #3F94C0;" class="page-title bd-w100">账户充值</p>
+				</li>
+				<li style="display: none;" class="pay-li-common bd-w100 er">
+					<span class="pay-common-leftspan bd-dib">订单号：</span><span id="did" class="pay-common-rightspan bd-dib">343245325251325</span>
+				</li>
+				<li class="pay-li-common bd-w100 san">
+					<span class="pay-common-leftspan bd-dib">共充值：</span><span class="pay-common-rightspan bd-dib"><em id="amount">1</em>个夺宝币</span>
+				</li>
+				<li class="pay-li-common bd-w100 si">
+					<span class="pay-common-leftspan bd-dib">充值方式：</span>
+				</li>
+				<li class="pay-li-common xian bd-w100 liu">
+					<div type="2" class="pay-type-rediok shi bd-dib">
+						
+					</div><div style="background-image: url(img/pay_img_alipay.png);" class="pay-icoimgk bd-dib">
+						<img class="pay-img" alt="" src="img/pay_img_alipay.png">
+					</div><div class="pay-type-namek bd-dib">
+						<span class="pay-name">支付宝充值</span>
+					</div><div class="pay-type-smk bd-dib">
+						<span class="pay-sm">(推荐有支付宝账号者使用)</span>
+					</div>
+				</li>
+				<li style="display: none;" class="pay-li-common xian bd-w100 qi">
+					<div type="3" class="pay-type-rediok bd-dib">
+						
+					</div><div style="background-image: url(img/pay_img_weixin.png);" class="pay-icoimgk bd-dib">
+						<img class="pay-img" alt="" src="img/pay_img_weixin.png">
+					</div><div class="pay-type-namek bd-dib">
+						<span class="pay-name">微信充值</span>
+					</div><div class="pay-type-smk bd-dib">
+						<span class="pay-sm">(推荐有微信账号者使用)</span>
+					</div>
+				</li>
+				<li style="display: none;" class="pay-li-common xian bd-w100 ba">
+					<div type="4" class="pay-type-rediok bd-dib">
+						
+					</div><div style="background-image: url(img/pay_img_vsiv.png);" class="pay-icoimgk bd-dib">
+						<img class="pay-img" alt="" src="img/pay_img_vsiv.png">
+					</div><div class="pay-type-namek bd-dib">
+						<span class="pay-name">网银充值</span>
+					</div><div class="pay-type-smk bd-dib">
+						<span class="pay-sm">(推荐有网银账号者使用)</span>
+					</div>
+				</li>
+				<li class="pay-li-common bd-w100 jiu">
+					<a style="background-color: #3F94C0;" class="now_pay" onclick="payType()" href="javascript:void(0)">立即充值</a>
+				</li>
+				<li class="pay-li-common bd-w100 shi">
+					<p class="pay_beizhu_sm">
+						说明:<br>
+						充值一元兑换一个夺宝币，使用夺宝币可以参与疯抢活动（充值成功无法退回）
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

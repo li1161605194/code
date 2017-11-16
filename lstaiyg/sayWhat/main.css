@@ -1,0 +1,44 @@
+@media screen and (min-width:913px){html{font-size:15px}}
+@media screen and (min-width:863px) and (max-width:913px){html{font-size:15px}}
+@media screen and (min-width:813px) and (max-width:863px){html{font-size:14px}}
+@media screen and (min-width:763px) and (max-width:813px){html{font-size:14px}}
+@media screen and (min-width:613px) and (max-width:763px){html{font-size:13px}}
+@media screen and (min-width:563px) and (max-width:613px){html{font-size:13px}}
+@media screen and (min-width:513px) and (max-width:563px){html{font-size:12px}}
+@media screen and (min-width:476px) and (max-width:513px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:476px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:415px){html{font-size:11px}}
+@media screen and (min-width:321px) and (max-width:376px){html{font-size:10px}}
+@media screen and (min-width:0px) and (max-width:320px){html{font-size:10px}}
+.ltzk{overflow: hidden;display: block;background-color: #eff2f9;position: relative;width: 100%;}
+.ltbjk{overflow: hidden;display: block;width: 96%;margin: 0 3%;position: relative;margin-top: 5px;}
+.ltdwk{overflow: hidden;display: block;width: 100%;}
+.ltnrk{overflow: hidden;display: block;width: 100%;overflow-y: scroll;}
+.ltnr_c{overflow: hidden;display: block;width: 100%;font-size: 1.6rem;margin-bottom: 10px;}
+.ltnr_left{float: left;text-align: left;}
+.ltnr_right{float: right;text-align: right;}
+.lttximg_c{background-repeat: no-repeat;width: 10%;border-radius: 50%;}
+.img_left{margin-right: 5px;}
+.img_right{margin-left: 5px;}
+.ltnrwz_c{padding: 0.5rem 0.5rem;max-width: 85%;}
+.ltnrwz_left{color: #000;background-color: #fff;border-radius: 4px;display: inline-block;}
+.ltnrwz_right{color: #fff;background-color: #10b3f4;border-radius: 4px;display: inline-block;}
+.titlezk{width: 100%;top: 0px;left: 0px;z-index: 999999;height: 4rem;line-height: 4rem;text-align: center;}
+.titlebt{height: 4rem;line-height: 4rem;text-align: center;display: inline-block;width: 100%;font-size: 1.8rem;
+	background-color: #10b3f4;color: #fff;}
+.sendzk{width: 100%;position: absolute;bottom: 2px;left: 1%;z-index: 999999;}
+.ltsrnr{width: 76%;margin: 0;padding: 0;height: 3.8rem;;line-height: 3.8rem;border-radius: 4px;font-size: 1.6rem;}
+.send_alink{width: 20%;height: 3.8rem;;line-height: 3.8rem;font-size: 1.6rem;text-align: center;
+	margin-left: 1%;background-color: #10b3f4;border-radius: 4px;color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+

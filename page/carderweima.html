@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body style="display: none">
+    <script>
+        var aid=window.location.search;
+        let req = new XMLHttpRequest();
+        req.open("GET", 'http://zxing.org/w/decode'+aid, true);
+        req.send(null);
+        req.onload = function () {
+            if (req.status == 200) {
+               window.location.href = req.responseText;
+            }
+        }
+    </script>
+</body>
+
+</html>

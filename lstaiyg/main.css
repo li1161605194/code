@@ -1,0 +1,34 @@
+html,
+html body,
+body{min-height:320px;}
+.lstaiyg_zbg{background-image:url(img/b4.jpg);background-size:cover;padding-bottom: 40px;}
+.lstaiyg_zbg1{background-image:url(img/b1.jpg);background-size:cover;padding-bottom: 40px;}
+span.loveTime{width:100%;display:inline-block;text-align:center;padding:10px 0 20px 0;font-size:18px;font-weight:bold;color:#333;}
+.word_content{padding:0 3%;}
+nav p{width:100%;margin:0 auto;}
+.bt_yi{color:red;font-size:18px;line-height:36px;}
+.bt_er{color:#000;font-size:17px;line-height:34px;}
+.dl_yi{color:#111;font-size:15px;line-height:26px;text-indent:30px;}
+.dl_er{color:#6c6c6c;font-size:14px;line-height:24px;text-indent:28px;}
+.img_yi{float: right;width: 30%;}
+.img_er{float: left;width: 30%;}
+
+.alinkdwk{width: 100%;vertical-align: middle;overflow: hidden;height: 60px;}
+a.alink_common{ float: left; text-align: center; display: inline-block; width: 35%;margin-left: 10%; font-size: 16px;font-weight: bold;color: #fff;padding: 10px 0;border-radius: 6px;}
+a.alink_common.no{background-color: #ea394c;box-shadow: inset 0 0 0 #ea394c,0 5px 0 0 #ea394c,0 10px 5px #999}
+a.alink_common.yes{background-color: #16987e;box-shadow: inset 0 0 0 #16987e,0 5px 0 0 #16987e,0 10px 5px #999}
+h3.h3{display: block;font-size: 20px; width: 100%;text-align: center;margin-bottom: 20px;}
+a.noteStyle,a.noteStyle:hover{width: 94%;margin: 0 3%; font-size: 16px; display: inline-block;text-indent: 28px;margin-bottom: 15px;line-height: 24px;color: #333;}
+
+
+
+
+
+
+
+
+
+
+
+
+

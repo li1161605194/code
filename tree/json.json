@@ -1,0 +1,75 @@
+[
+  {
+    "id": 4,
+    "name": "销售部1",
+    "code": "0",
+    "parentIds": "1",
+    "parentId": 1,
+    "orgtypeId": null,
+    "listorder": 4,
+    "lists": [
+      {
+        "id": 19,
+        "name": "ceshi002",
+        "code": "002002",
+        "parentIds": null,
+        "parentId": 4,
+        "orgtypeId": null,
+        "listorder": 1,
+        "lists": [
+          
+        ],
+        "personnels": [
+          
+        ]
+      },
+      {
+        "id": 6,
+        "name": "销售部2",
+        "code": "0",
+        "parentIds": "1,4",
+        "parentId": 4,
+        "orgtypeId": null,
+        "listorder": 6,
+        "lists": [
+          {
+            "id": 7,
+            "name": "研发部2",
+            "code": "0",
+            "parentIds": "1,4,6",
+            "parentId": 6,
+            "orgtypeId": null,
+            "listorder": 7,
+            "lists": [
+              
+            ],
+            "personnels": [
+              
+            ]
+          }
+        ],
+        "personnels": [
+          
+        ]
+      }
+    ],
+    "personnels": [
+      
+    ]
+  },
+  {
+    "id": 5,
+    "name": "研发部1",
+    "code": "0",
+    "parentIds": "1",
+    "parentId": 1,
+    "orgtypeId": null,
+    "listorder": 5,
+    "lists": [
+      
+    ],
+    "personnels": [
+      
+    ]
+  }
+]

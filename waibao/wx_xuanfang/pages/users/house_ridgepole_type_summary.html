@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<script>
+			var initParams = {
+				"css": [],
+				"js": ["js/users/house_ridgepole_type_summary.js"],
+				"title": "房源总概况"
+			};
+		</script>
+		<script src="../../js/init.js"></script>
+		<title></title>
+	</head>
+
+	<body ontouchstart>
+		<div class="page">
+			<div class="page_bd">
+				<div class="weui-tab">
+					<div class="weui-tab_panel">
+						<p class="house_summary_tips type_summary_tips">房源概况：共<span id="houseTotalCount">&nbsp;</span>套，剩<span id="houseRemainCount">&nbsp;</span>套</p>
+						<section class="house_section">
+							<p class="summary_title">
+								房源类型
+							</p>
+							<ul class="house_type_summary_container">
+								<!--<li rel="users/house_summary.html" class="tzpage"><em class="type_title">B类</em><br>剩<em class="remain_count">222</em>套</li>
+								<li><em class="type_title">C类</em><br>剩<em class="remain_count">2222</em>套</li>
+								<li><em class="type_title">D类</em><br>剩<em class="remain_count">2222</em>套</li>-->
+							</ul>
+						</section>
+						<section  class="house_section">
+							<p class="summary_title">
+								房源栋号
+							</p>
+							<ul class="house_ridge_summary_container">
+								<!--<li>1栋 剩222套</li>
+								<li>11栋 剩2222套</li>
+								<li>12栋 剩1222套</li>
+								<li>12栋 剩2122套</li>
+								<li>1栋 剩222套</li>
+								<li>1栋 剩22套</li>-->
+							</ul>
+						</section>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

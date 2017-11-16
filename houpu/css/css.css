@@ -1,0 +1,103 @@
+@charset "UTF-8";
+html,body,div,p,nav,img,input,a,span,i,em,ul,li,table,tr,td,
+*{font-family:"Microsoft yahei";position:relative;border:0;margin:0;padding:0;font-style:normal;font-weight:normal;list-style:none;text-decoration:none;background-repeat:no-repeat;}
+html{font-size:14px;font-family:"Microsoft yahei";}
+html,body{}
+a{-webkit-tap-highlight-color:transparent}
+.appdownload img{display: block;}
+
+.fll{float: left;}
+.flr{float: right;}
+.wbfb{display: block;position: relative;width: 100%;}
+.w1200{display: block;position: relative;border: solid 0px #fff;overflow: hidden; width: 1200px;margin: 0 auto;}
+.wutextk{}
+p.appdownload_wzyi{text-align: left; font-size: 30px;color: #333333;line-height: 44px;}
+p.appdownload_wzer{text-align: left; font-size: 16px;color: #3a3120;line-height: 26px;margin-top: 25px;}
+
+.wbfb.yi{background-image: url(download/1001.jpg);height: 733px;overflow: visible;}
+.w1200.yi{height: 733px;overflow: visible;}
+.yiimgyi{width: 397px;height: 801px;position: absolute;top: 80px; left: 100px; z-index: 99;}
+.wutextk.yi{position: absolute;top: 165px;left: 645px;}
+.appdownload_wzer.yi{color: #fff;font-size: 18px;line-height: 28px;}
+.yiimger{margin-top: 55px;width: 240px;height: 240px;}
+.wbfb.yi .w1200.yi a.yi_alink{position: absolute;display: inline-block; width: 185px;height: 60px;line-height: 60px; border-radius: 4px;color: #fff;text-align: center;font-size: 22px;}
+.wbfb.yi .w1200.yi a.yi_alink.yi{background-color: #25bde9;left: 280px;top: 220px;}
+.wbfb.yi .w1200.yi a.yi_alink.er{background-color: #fead12;left: 280px;top: 310px;}
+.wbfb.yi .w1200.yi a.yi_alink:before{font-size: 28px;margin-right: 16px;}
+
+.wbfb.er{background-color: #fff;height: 780px;background-image: url(download/1007.png);background-position: bottom;}
+.erimgyi{width: 372px;height: 530px;background-image: url(download/1006.png);background-position: top;margin-left: 120px;margin-top: 250px;}
+.wutextk.er{margin-top: 290px;margin-left: 165px;}
+.erimger{width: 450px;height: 97px;margin-top: 75px;}
+
+.wbfb.san{background-color: #91c94d;height: 630px;}
+.sanimgyi{width: 510px;height: 470px;background-image: url(download/1005.png);background-position: top;margin-left: 65px;margin-top: 200px;}
+.wutextk.san{margin-top: 240px;margin-left: 165px;}
+.appdownload_wzyi.san{color: #fff;}
+.appdownload_wzer.san{color: #fff;}
+
+.wbfb.si{background-color: #ffffff;height: 630px;}
+.siimgyi{width: 526px;height: 430px;background-image: url(download/1002.png);background-position: top;margin-left: 100px;margin-top: 200px;}
+.wutextk.si{margin-top: 240px;margin-left: 165px;text-align: left;}
+a.si_alink{display: inline-block;width: 66px;height: 66px;line-height: 66px;text-align: center;color: #fff;border-radius: 10px;margin-right: 30px;margin-top: 60px;}
+a.si_alink.yi{background-color: #f98e29;}
+a.si_alink.er{background-color: #00b7ee;}
+a.si_alink.san{background-color: #70dbc5;}
+
+.wbfb.wu{background-color: #ffb526;height: 630px;}
+.wuimgyi{width: 636px;height: 379px;margin-top: 152px;margin-left: 35px;}
+.wutextk.wu{margin-top: 260px;margin-left: 100px;}
+
+.wbfb.liu{background-color: #eff3f6;height: 525px;}
+.liuimgyi{width: 1038px;height: 239px;margin: 0 auto;margin-top: 70px;}
+.downapp_alink_dwk{text-align: center;margin-top: 60px;}
+a.downapp_alink{display: inline-block;width: 140px;height: 40px;line-height: 40px;font-size: 14px;text-align: center;color:#f88f26;border:solid 1px #f88f26;border-radius: 6px;}
+
+.opacity{opacity: 0; filter: "alpha(opacity=0)"; filter: alpha(opacity=0); zoom: 1; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

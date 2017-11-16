@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tree可操作菜单</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="tree.js"></script>
+</head>
+<body>
+	<div class="zk">
+		<div class="content" id="content">
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$("#content").treeview({
+				free:{
+					listname:"lists",					
+					name:"name"
+				},
+				data:[{"id":4,"name":"销售部1","code":"0","parentIds":"1","parentId":1,"orgtypeId":null,"listorder":4,"lists":[{"id":19,"name":"ceshi002","code":"002002","parentIds":null,"parentId":4,"orgtypeId":null,"listorder":1,"lists":[],"personnels":[]},{"id":6,"name":"销售部2","code":"0","parentIds":"1,4","parentId":4,"orgtypeId":null,"listorder":6,"lists":[{"id":7,"name":"研发部2","code":"0","parentIds":"1,4,6","parentId":6,"orgtypeId":null,"listorder":7,"lists":[],"personnels":[]}],"personnels":[]}],"personnels":[]},{"id":5,"name":"研发部1","code":"0","parentIds":"1","parentId":1,"orgtypeId":null,"listorder":5,"lists":[],"personnels":[]}]
+			});
+			
+		})
+		function loadProductBusiness(url,param,afterFn) {
+			$.getJSON(url, function (response) {
+				if (!response.success){
+		            if(response.resultCode&& response.resultCode== 1019){
+		              window.location.href="/404.html";
+		            }
+		            return;
+		        }
+				afterFn && afterFn(response);
+			});
+		}
+	</script>
+</body>
+</html>
