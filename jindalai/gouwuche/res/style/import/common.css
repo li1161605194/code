@@ -1,0 +1,16 @@
+/* bottom footer */
+#containerjies.container{background-color: #fff;padding: 0;margin: 0 auto;vertical-align: middle; border-top: 1px solid #d9d9d9;}
+.footer-nav{ box-sizing:border-box; width:100%; display:block; overflow:hidden; }
+.footer-nav .nav-list{ box-sizing:border-box; width:25%; float:left; text-align:center; }
+.footer-nav .nav-list a{ display:block; width:100%; height:100%; }
+.footer-nav p{ max-width:35px;width:0.85rem; max-height:35px;height:0.7rem; margin:0px auto; background-size:cover; background-position:center center; background-repeat:no-repeat; }
+.footer-nav span{ font-size:0.2rem; color:#8e8f8f; display:block; position:relative; top:0px; }
+.footer-nav .navon span{ color:#ff5500}
+.footer-nav p.f-n-home{ background-image:url(/../../images/index.png); }
+.footer-nav p.f-n-sl{ background-image:url(/../../images/class.png); }
+.footer-nav p.f-n-gwc{ background-image:url(/../../images/gwc.png); }
+.footer-nav p.f-n-my{ background-image:url(/../../images/my.png); }
+.footer-nav .navon p.f-n-home{ background-image:url(/../../images/index_hover.png); }
+.footer-nav .navon p.f-n-sl{ background-image:url(/../../images/class_hover.png); }
+.footer-nav .navon p.f-n-gwc{ background-image:url(/../../images/gwc_hover.png); }
+.footer-nav .navon p.f-n-my{ background-image:url(/../../images/my_hover.png); }

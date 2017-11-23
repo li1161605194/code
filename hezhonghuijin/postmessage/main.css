@@ -1,0 +1,57 @@
+.text_ul {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 20rem;
+}
+.text_li {
+	display: block;
+	margin: 0 auto;
+	font-size: 1.4rem;
+	text-align: left;
+	margin-bottom: 0.5rem;
+	width: 94%;
+	white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.text_li.ziji {
+	text-align: right;
+}
+.srzk {
+	width: 100%;
+	overflow: hidden;
+}
+#send_text {
+	border: solid 1px #333;
+	float: left;
+	width: 89%;
+	height: 1.6rem;
+	line-height: 1.6rem;
+}
+#send_btn {
+	float: left;
+	width: 10%;
+	height: 1.6rem;
+	line-height: 1.6rem;
+}
+p.msgwz {
+	font-size: 1.3rem;
+	background-color: #4bade0;
+	color: #fff;
+	display: inline;
+	padding: 0.2rem 0.4rem;
+	border-bottom-right-radius: 0.8rem;
+	border-top-left-radius: 0.6rem;
+	white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+p.msguser {
+	font-size: 0.9rem;
+	color: #000;
+}
+.text_li.ziji p.msgwz{
+	border-bottom-left-radius: 0.8rem;
+	border-top-right-radius: 0.6rem;
+}

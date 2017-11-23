@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="applicable-device" content="mobile">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta name="application-name" content="菜碑网">
+    <title>购物车</title>
+    <link rel="stylesheet" href="res/unit/bootstrap-3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="res/style/import/common.css">
+    <link rel="stylesheet" type="text/css" href="res/style/import/main.css">
+    <script type="text/javascript" src="res/javascript/common/jquery.min.js"></script>
+    <script type="text/javascript" src="res/unit/iscroll/iscroll.js"></script>
+    <script type="text/javascript" src="res/unit/iscroll/refsh/iscroll.js" ></script>
+    <script type="text/javascript" src="res/unit/iscroll/refsh/XMSScrollFrame.js" ></script>
+    <script type="text/javascript" src="res/unit/fly/fly.js"></script>
+    <script type="text/javascript" src="res/unit/fly/front.js"></script>
+    <script type="text/javascript" src="res/javascript/common/base.js"></script>
+    <script type="text/javascript" src="res/javascript/common/main.js"></script>
+    <script type="text/javascript" src="res/javascript/common/init.js"></script>
+    <script type="text/javascript" src="res/javascript/shopcars.js"></script>
+    <script type="text/javascript">
+    var myScroll1;
+    var myScroll2;
+    var myScroll3;
+    var scrollFrime;
+
+    function loaded() {
+    	jsonMenuyiBase();
+    	jsonMenuerBase(10000);
+        myScroll1 = new IScroll('#wrapper1', {snap:true, click:true, probeType:false, preventDefault:false, scrollX: true, scrollY: false, mouseWheel: true});
+        myScroll2 = new IScroll('#wrapper2', {click:true, probeType:false, preventDefault:false, scrollX: false, scrollY: true, mouseWheel: true});
+        /*myScroll3 = new IScroll('#wrapper3', {scrollX: false, scrollY: true, mouseWheel: true});*/
+
+        xmsCore.xmsFrameInit();
+        scrollFrime = xmsCore.XMSScrollFrame("#wrapper3",{
+        	probeType:false, preventDefault:false,
+            mouseWheel: true,
+            useTransform: true,//CSS转化
+	        useTransition: true,//CSS过渡
+            downFn:_downFn,
+            upFn:_upFn
+        });
+    }
+    
+    document.addEventListener('touchmove', function(e) {e.preventDefault(); }, false);
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(loaded, 200);
+    }, false);
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container cb_gwc_top_zk">
+            <div class="h-left">
+                <a class="h-left-a" href="javascript:history.go(-1);" style="display: inline-block;">
+                	<img class="h-right-r" alt="" src="images/a_left.png">
+                </a>
+            </div>
+            <div class="h-mid">
+                <form id="searchForm" action="/front/goods!search.action?&amp;page=1&amp;rows=8" method="post">
+                    <input type="text" name="keyWord" id="searchKeyWord" class="h-mid-text" value="" placeholder="输入菜名搜索">
+                    <a id="searchButton" class="search-img"></a>
+                </form>
+            </div>
+            <div class="h-right">
+                <a href="/front/owner_self!list.action" style="display: inline-block;" >
+                	<img class="h-right-r" alt="" src="images/uesr.png">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="zdwk">
+        <div class="leftimg" id="prev" onclick="">
+            <div class="arrow-left"></div>
+        </div>
+        <div id="wrapper1">
+            <div id="scroller1">
+                <ul id="thelist1" class="menuul">
+
+                </ul>
+            </div>
+        </div>
+        <div class="rightimg" id="next" onclick="">
+            <div class="arrow-right"></div>
+        </div>
+    </div>
+    <div class="zbjdwk">
+        <div id="wrapper2">
+            <div id="scroller2">
+                <ul id="thelist2" class="menuul">
+                   
+                </ul>
+            </div>
+        </div>
+        <div id="wrapper3">
+        <div id="scroller3">
+            <div class = "frame-scroll-down-ele">下拉刷新......</div>
+            <ul id="ulk">
+                <li>
+                	<div class="scroll-list">
+					    <div class="scroll-l">
+					        <p class="scroll-l-title">小黄瓜新疆特产皇冠</p>
+					        <p class="scroll-l-info">营养价值高，老少皆宜,价值高，老少皆宜价值高，老少皆宜</p>
+					        <p class="scroll-l-price zong"><i class="flzjg">12</i><i>/袋(5斤)</i></p>
+					        <p class="scroll-l-price dan">每斤2.4元</p>
+					    </div>
+					    <div class="scroll-r">
+					        <div class="scroll-img">
+					            <p><img id="8a983cb354332dea01543696e8e602e8" src="http://ecb2.jdlwlkj.com//upload/201604/small/a40f6213b8fe44de8b98dd1963eb992c.jpg"></p>
+					        </div>
+					        <div class="scroll-num">
+					            <div class="b-num-wrap"> <span weight="5" store="1000" price="12" pid="8a983cb354332dea01543696e8e602e8" class="minus"></span> <span id="8a983cb354332dea01543696e8e602e8" class="b-num-sl">0</span> <span weight="5" store="1000" price="12" pid="8a983cb354332dea01543696e8e602e8" class="plus"></span> </div>
+					        </div>
+					        <div class="scroll-sl">
+					            <p id="str8a983cb354332dea01543696e8e602e8" packname="袋" unitname="" packnum="null"></p>
+					        	<p id="jin8a983cb354332dea01543696e8e602e8" weight="5"></p>
+					        </div>
+					    </div>
+					</div>
+                </li>
+                <li>
+                	<div class="scroll-list">
+					    <div class="scroll-l">
+					        <p class="scroll-l-title">小黄瓜新疆特产皇冠</p>
+					        <p class="scroll-l-info">营养价值高，老少皆宜,价值高，老少皆宜价值高，老少皆宜</p>
+					        <p class="scroll-l-price zong"><i class="flzjg">15</i><i>/袋(3斤)</i></p>
+					        <p class="scroll-l-price dan">每斤5元</p>
+					    </div>
+					    <div class="scroll-r">
+					        <div class="scroll-img">
+					            <p><img id="8a983cb354332dea015436961d1202d0" src="http://ecb2.jdlwlkj.com//upload/201604/small/39d79196484444adaf691fe4db9ac4e5.jpg"></p>
+					        </div>
+					        <div class="scroll-num">
+					            <div class="b-num-wrap"> <span weight="3" store="1000" price="15" pid="8a983cb354332dea015436961d1202d0" class="minus"></span> <span id="8a983cb354332dea015436961d1202d0" class="b-num-sl">0</span> <span weight="3" store="1000" price="15" pid="8a983cb354332dea015436961d1202d0" class="plus"></span> </div>
+					        </div>
+					        <div class="scroll-sl">
+					            <p id="str8a983cb354332dea015436961d1202d0" packname="袋" unitname="" packnum="null"></p>
+					            <p id="jin8a983cb354332dea015436961d1202d0" weight="3"></p>
+					        </div>
+					    </div>
+					</div>
+                </li>
+                <li>
+                	<div class="scroll-list">
+					    <div class="scroll-l">
+					        <p class="scroll-l-title">小黄瓜新疆特产皇冠</p>
+					        <p class="scroll-l-info">营养价值高，老少皆宜,价值高，老少皆宜价值高，老少皆宜</p>
+					        <p class="scroll-l-price zong"><i class="flzjg">14</i><i>/袋(4斤)</i></p>
+					        <p class="scroll-l-price dan">每斤4.5元</p>
+					    </div>
+					    <div class="scroll-r">
+					        <div class="scroll-img">
+					            <p><img id="8a983cb3542dc8d501543319142c0252" src="http://ecb2.jdlwlkj.com//upload/201604/small/de2393abe79449709d0e0704de7422d1.jpg"></p>
+					        </div>
+					        <div class="scroll-num">
+					            <div class="b-num-wrap"> <span weight="4" store="1000" price="14" pid="8a983cb3542dc8d501543319142c0252" class="minus"></span> <span id="8a983cb3542dc8d501543319142c0252" class="b-num-sl">0</span> <span weight="4" store="1000" price="14" pid="8a983cb3542dc8d501543319142c0252" class="plus"></span> </div>
+					        </div>
+					        <div class="scroll-sl">
+					            <p id="str8a983cb3542dc8d501543319142c0252" packname="袋" unitname="" packnum="null"></p>
+					            <p id="jin8a983cb3542dc8d501543319142c0252" weight="4"></p>
+					        </div>
+					    </div>
+					</div>
+                </li>
+            </ul>
+            <div class = "frame-scroll-up-ele">上拉加载......</div>
+        </div>
+    </div>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="b-sldd">
+			    <div class="sldd-l">
+			        <div style="" class="sldd-lt">待提交</div>
+			        <div class="sldd-ll" id="allGoosType">
+			            <p>种类</p><i>0</i></div>
+			        <div class="sldd-ll" id="allPrice">
+			            <p>商品总价</p><i>¥0.00</i></div>
+			    </div>
+			    <p class="sldd-r"><a href="/front/shopping!list.action">下一步</a></p>
+			</div>
+        </div>
+    </nav>
+</body>
+
+</html>
