@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>卡位列表</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/jui.css" type="text/css"  />
+    <link rel="stylesheet" href="css/card.css" type="text/css"  />
+    <script type="text/javascript" src="js/cardwei/jquery.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="card-wei-zk" style="width:1100px;margin:0 auto;background-color:#fff;">
+<script>
+MSGSWITCH = true;
+</script>
+
+<script>
+MERCHANT_SWITCH = 'true';
+</script>
+ <script type="text/javascript">
+window.GLOBAL || (GLOBAL = {});
+GLOBAL.system = {};
+
+</script>
+<div id="J-global-notice-container" class="global-notice-container" style="position: relative; z-index: 999; background: #ff6600;">
+</div>
+<div id="container" class="ui-container">
+<div class="tbf-container">
+    <div class="fn-hide" id="city-items">
+        [{"cityInfos":[{"cityCode":"110100","cityName":"北京市","state":""}],"provinceCode":"110000","provinceName":"北京","state":"","subCount":1},{"cityInfos":[{"cityCode":"120100","cityName":"天津市","state":""}],"provinceCode":"120000","provinceName":"天津","state":"","subCount":1}]
+    </div>
+    <div class="fn-hide" id="category-items">
+       [{"categoryList":[{"name":"中餐","state":"","rootId":"40288a6455947403015594753d300000","parentId":"40288a6455947403015594753d300000","subCount":0,"id":"40288a6455948240015594a94be70002"},{"name":"餐","state":"","rootId":"40288a6455947403015594753d300000","parentId":"40288a6455947403015594753d300000","subCount":0,"id":"40288a6455948240015594a979180003"}],"id":"40288a6455947403015594753d300001","name":"美食","state":"","rootId":"40288a6455947403015594753d300000","parentId":"","subCount":2}]
+    </div>
+
+<div class="tbf-sliderNav">
+    <div class="tbf-context">
+        <div class="spec-filter-bar fn-clear">
+            <div class="inner_filter_bar" data-type="apply">
+                <ul class="type_filter_list">
+                    <li class="fn-left fn-mr20 current"><span class="jui-checkbox-group"><input id="J-includeFree" type="checkbox" name="checkbox" value="true" seed="juiCheckboxGroup-JIncludeFree" smartracker="on"></span>免费
+                    </li>
+                    <li class="fn-left fn-mr20"><span class="jui-checkbox-group"><input id="J-includeCharge" type="checkbox" name="checkbox" value="true" seed="juiCheckboxGroup-JIncludeCharge" smartracker="on"></span>收费
+                    </li>
+                    <li class="fn-left fn-mr20">
+                        <div class="jui-select" id="J-select-category" style="width: auto; display: inline-block;" tabindex="-1"><p class="jui-select-view">所有行业</p></div>
+                        <input id="J-cityCodeList" type="hidden" value="">
+                    </li>
+                    <li class="fn-left">
+                        <div class="jui-select" id="J-select-city" style="width: auto; display: inline-block;" tabindex="-1"><p class="jui-select-view">所有地区</p></div>
+                        <input id="J-categoryIdList" type="hidden" value="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- start main content body-->
+        <div class="tbf-main fn-clear service_container">
+            <div id="J-commodity-list"></div>
+        </div>
+
+        <div class="J-page"><div class="fn-mt20 ft-right fn-mr20 fn-mb30" id="J_paging"><div class="jui-paging">    <span class="jui-paging-jump">        <input type="text" value="1" data-role="gotoNum">        <button class="jui-btn" data-role="goto">跳转</button>    </span>    <span class="jui-paging-turn">        <span class="jui-paging-num">第 1/3 页</span>                <button class="jui-btn tri-after tri-left-after fn-mr10" disabled="disabled">                        </button><button class="jui-btn tri-after tri-right-after" data-role="next"></button>            </span></div></div></div>
+    </div>
+</div>
+<script charset="utf-8" src="js/cardwei/onlineCommodity.js"></script>
+  </div>
+</div>
+
+</body>
+</html>

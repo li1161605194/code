@@ -1,0 +1,34 @@
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: .3;
+    filter: alpha(opacity=30)
+}
+#J-loginDialog {
+    width: 380px;
+    margin-left: -190px;
+}
+.modal .modal-header{
+    padding: 4px 15px;
+}
+.modal .modal-header h3{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+#J-feedback{
+    width: 480px;
+    margin-left: -240px;
+}
+#J-feedback .modal-body{
+    padding: 15px 0px;
+    max-height: 420px;
+}
+#J-feedback .form-horizontal{
+    margin: 0;
+}
+#J-feedback .alert{
+    margin: -10px auto 5px auto;
+    width: 340px;
+    padding-top:1px ;
+    padding-bottom:1px ;
+}
+

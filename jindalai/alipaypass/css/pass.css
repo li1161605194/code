@@ -1,0 +1,940 @@
+#pass, .pass-front, .pass-back {
+    width: 320px;
+    height: 420px;
+}
+
+#pass {
+    cursor: pointer;
+    position: relative;
+}
+
+.pass-front, .pass-back {
+    cursor: pointer;
+}
+
+.pass-front .lt, .pass-front .rt, .pass-front .lb, .pass-front .rb, .pass-back .lt, .pass-back .rt, .pass-back .lb, .pass-back .rb {
+    width: 8px;
+    height: 8px;
+    overflow: hidden;
+    position: absolute;
+    background-image: url(../img/ticket_corner.png);
+}
+
+.pass-front .lt, .pass-back .lt {
+    left: 0;
+    top: 0;
+    background-position: -8px -8px;
+}
+
+.pass-front .rt, .pass-back .rt {
+    top: 0;
+    right: 0;
+    background-position: 0 -8px;
+}
+
+.pass-front .lb, .pass-back .lb {
+    left: 0;
+    bottom: 0;
+    background-position: -8px 0;
+}
+
+.pass-front .rb, .pass-back .rb {
+    right: 0;
+    bottom: 0;
+    background-position: 0 0;
+}
+
+.pass-front .head {
+    height: 40px;
+    padding: 7.5px 10px;
+}
+
+.pass-front .foot {
+    height: 35px;
+    background: #ddd;
+    -webkit-transition:backgroud .3s ease;
+    transition:backgroud .3s ease;
+}
+#pass.pass-fliped.pass-flip .pass-front .foot{
+    background: #ddd;
+}
+.pass-fliped .pass-front .foot{
+    background: #999;
+}
+
+.pass-front .content {
+    height: 320px;
+    background-color: #dddddd;
+    position: relative;
+}
+
+.pass-back .head {
+    height: 35px;
+}
+
+.pass-back .foot {
+    height: 35px;
+}
+
+.pass-back .content {
+    height: 355px;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    position: relative;
+    border-bottom: 10px solid #f3f3f3;
+}
+
+.pass-front .head .logo {
+    float: left;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+.pass-front .head .logo img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 3px;
+}
+
+.pass-front .head .titles {
+    float: left;
+    padding-left: 10px;
+}
+
+.pass-front .head .title {
+    text-overflow: ellipsis;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.pass-front .head .titles .title {
+    font-size: 15px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.pass-front .head .titles .subtitle {
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: 1px;
+    color: #eeeeee;
+    display: none;
+}
+
+.pass-front .head .titles-double {
+    padding-top: 0;
+}
+
+.pass-front .head .titles-double .title {
+    line-height: 23px;
+}
+
+.pass-front .head .titles-double .subtitle {
+    display: block;
+    text-overflow: ellipsis;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.pass-front .head .headRight {
+    float: right;
+    width: 90px;
+    height: 36px;
+    margin-right: -10px;
+}
+
+.pass-front .head .items .item-label, .pass-front .head .items .item-content {
+    text-align: right;
+}
+
+.pass-front .head .items .item-label {
+    text-overflow: ellipsis;
+    width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 12px;
+    color: #eeeeee;
+    margin-top: 5px;
+}
+
+.pass-front .head .items .item-content {
+    text-overflow: ellipsis;
+    width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.pass-front .content .items-2 .item, .pass-front .content .items-3 .item, .pass-front .content .items-4 .item {
+    float: left;
+}
+
+.pass-front .content .items-1 .item {
+    width: 100%;
+}
+
+.pass-front .content .items-2 .item {
+    width: 49.9%;
+}
+
+.pass-front .content .items-3 .item {
+    width: 33.3%;
+}
+
+.pass-front .content .items-4 .item {
+    width: 24.9%;
+}
+
+.pass-front .content .item-last .item-label, .pass-front .content .item-last .item-content {
+    text-align: right;
+}
+
+.pass-front .operations {
+    background: transparent url(../img/dash.png) left top repeat-x;
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.pass-front .operations .items {
+    height: 147px;
+}
+
+.pass-front .operations .item {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    display: inline;
+    float: left;
+    vertical-align: top;
+
+}
+
+.pass-front .operations .dots {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    height: 7px;
+    text-align: center;
+    line-height: 0px;
+}
+
+.pass-front .operations .dots .dot {
+    width: 11px;
+    height: 7px;
+    overflow: hidden;
+    background: transparent url(../img/dot.png) 2px 0 no-repeat;
+    display: inline-block;
+    *zoom: 1;
+}
+
+.pass-front .operations .dots .on {
+    background-image: url(../img/dot_on.png);
+}
+
+.pass-front .operations .item-label {
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+    text-align: center;
+}
+
+.pass-front .operations .item-content {
+    margin-top: 4px;
+    text-align: center;
+}
+
+/*鎿嶄綔鍖� 浜岀淮鐮�*/
+.pass-front .op-qrcode {
+    margin-top: 12px;
+    min-height: 100px;
+}
+
+.pass-front .op-qrcode .item-content {
+    overflow: hidden;
+    height: 115px;
+    text-align: center;
+}
+
+.qrcodeContainer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.qrcodeContainer img {
+    display: inline !important;
+}
+
+/*鎿嶄綔鍖� 搴旂敤鍚姩*/
+.pass-front .op-app {
+    margin-top: 54px;
+}
+
+.pass-front .op-app .item-label {
+    display: none;
+}
+
+.pass-front .op-app .item-content {
+    width: 278px;
+    height: 42px;
+    background: transparent url(../img/btn_launch.png) 0 0 no-repeat;
+    font-size: 20px;
+    line-height: 42px;
+    color: #6688bb;
+    margin: 0 auto;
+}
+/*鎿嶄綔鍖� 閾炬帴*/
+.pass-front .op-url {
+    margin-top: 54px;
+}
+
+.pass-front .op-url .item-label {
+    width: 278px;
+    height: 42px;
+    background: transparent url(../img/btn_launch.png) 0 0 no-repeat;
+    font-size: 20px;
+    line-height: 42px;
+    color: #6688bb;
+    margin: 0 auto;
+}
+/*鎿嶄綔鍖� 鏂囧瓧*/
+.pass-front .op-text {
+    margin-top: 35px;
+    min-height: 65px;
+}
+
+.pass-front .op-text .item-label {
+    display: none;
+}
+
+.pass-front .op-text table {
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.pass-front .op-text th {
+    color: #666666;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    padding-right: 5px;
+    font-weight: normal;
+    min-width: 60px;
+}
+
+.pass-front .op-text td {
+    height: 100%;
+    color: #333333;
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    min-width: 60px;
+}
+
+/*鎿嶄綔鍖� 鏉＄爜*/
+.pass-front .op-barcode {
+    margin-top: 25px;
+    min-height: 75px;
+}
+
+/*.pass-front .op-barcode .item-label {
+  color:#666666;
+  font-size:12px;
+  line-height:12px;
+  display:block;
+  text-align:center;
+}*/
+.pass-front .op-barcode .item-content {
+    overflow: hidden;
+    height: 80px;
+    text-align: center;
+}
+
+.pass-front .op-barcode .barcodeContainer {
+    margin: 0 auto;
+    line-height: 1em;
+}
+
+/*鎿嶄綔鍖� 鍥剧墖*/
+.pass-front .op-img {
+    margin-top: 10px;
+    min-height: 75px;
+}
+
+.pass-front .op-img img {
+    display: block;
+    margin: 0 auto;
+    height: 115px;
+}
+
+/*鎿嶄綔鍖� 澹版尝*/
+.pass-front .op-wave {
+    margin-top: 10px;
+    min-height: 75px;
+}
+
+.pass-front .op-wave .wave-logo {
+    display: block;
+    width: 115px;
+    height: 115px;
+    background: url("../img/icon-wave.png") no-repeat left top;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.pass-front .op-wave .wave-logo:hover {
+    background: url("../img/icon-wave-hover.png") no-repeat left top;
+    background-size: 100% 100%;
+}
+
+.pass-back .content .it-tel .item-content {
+    padding-left: 20px;
+    background: transparent url(../img/ico_tel_green.png) 0 0 no-repeat;
+    color: #6688bb;
+}
+
+.pass-back .content .it-map .item-content {
+    padding-left: 20px;
+    background: transparent url(../img/ico_loc_green.png) 0 0 no-repeat;
+}
+
+.pass-back .content .it-url .item-content {
+    color: #4baece;
+    text-decoration: underline;
+}
+
+.pass-back .content .app, .pass-back .content .item {
+    padding: 10px 15px;
+}
+
+.pass-back .content .item {
+    margin-top: 3px;
+    padding-top: 12px;
+}
+
+.pass-back .content .app {
+    height: 40px;
+}
+
+.pass-back .content .app .icon {
+    float: left;
+}
+
+.pass-back .content .app .icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.pass-back .content .app .title {
+    float: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 150px;
+}
+
+.pass-back .content .app .title .name {
+    font-size: 15px;
+    line-height: 15px;
+    color: #333333;
+}
+
+.pass-back .content .app .title .info {
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666666;
+}
+
+.pass-back .content .app .button {
+    float: right;
+    margin-top: 7px;
+    width: 44px;
+    height: 26px;
+    background-image: url(../img/btn_open.png);
+}
+
+.pass-back .content .item {
+    background: transparent url(../img/sep.png) left top repeat-x;
+}
+
+.pass-back .content .item-label {
+    color: #666666;
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.pass-back .content .item-content {
+    color: #000000;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 4px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-weight: normal;
+    text-align: justify;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+}
+
+.pass-back .content .location-tel {
+    color: #4baece;
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.pass-back .without-app .app {
+    display: none;
+}
+
+.pass-back .without-app .items .item-first {
+    background: none;
+}
+
+.pass-front .share, .pass-back .share {
+    position: absolute;
+    left: 10px;
+    bottom: 18px;
+    width: 24px;
+    height: 18px;
+    background: transparent url(../img/btn_share.png) 0 0 no-repeat;
+}
+
+.pass-front .rotate, .pass-back .rotate {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 35px;
+    height: 30px;
+    background: transparent url(../img/btn_info.png) 8.5px 6px no-repeat;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.pass-back .rotate {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 22px;
+    height: 17px;
+    background: transparent url(../img/btn_rotate_back.png) 0 0 no-repeat;
+}
+
+.pass-back .trash {
+    position: absolute;
+    right: 15px;
+    top: 9px;
+    width: 14px;
+    height: 17px;
+    background: transparent url(../img/btn_trash.png) 0 0 no-repeat;
+}
+
+.pass-type-coupon .pass-front .content .primary-box {
+    background-color: #ededed
+}
+
+.pass-type-coupon .pass-front .content .strip {
+    height: 85px;
+}
+
+.pass-type-coupon .pass-front .content .strip img {
+    display: block;
+    width: 320px;
+    height: 85px;
+}
+
+.pass-type-coupon .pass-front .content .primary {
+    height: 85px;
+    width: 100%;
+    margin-top: -85px;
+    position: relative;
+    padding: 0 10px 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pass-type-coupon .pass-front .content .primary .items {
+    width: 100%;
+    height: 80px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+.pass-type-coupon .pass-front .content .primary .item {
+    margin-top: 5px;
+}
+
+.pass-type-coupon .pass-front .content .primary .item-label {
+    width: 300px;
+}
+
+.pass-type-coupon .pass-front .content .primary .item-content {
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #333333;
+    width: 300px;
+    height: 38px;
+}
+
+.pass-type-coupon .pass-front .content .secondary {
+    padding: 11px 10px 9px 10px;
+    height: 30px;
+}
+
+.pass-type-coupon .pass-front .content .secondary .item {
+    float: left;
+}
+
+.pass-type-coupon .pass-front .content .secondary .item-label {
+    color: #666666;
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+}
+
+.pass-type-coupon .pass-front .content .secondary .item-content {
+    color: #000000;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.pass-type-coupon .pass-front .content .auxiliary {
+    display: none;
+}
+
+.pass-type-coupon .pass-front .without-strip .strip {
+    display: none;
+}
+
+.pass-type-coupon .pass-front .without-strip .primary {
+    display: table;
+    margin-top: 0;
+}
+
+.pass-type-travel .pass-front .content .strip {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    left: 145.5px;
+    top: 18px;
+    display: none;
+}
+
+.pass-type-travel .pass-front .content .primary {
+    height: 65px;
+    background-color: #ededed;
+}
+
+.pass-type-travel .pass-front .content .primary .items {
+    padding: 15px 10px;
+}
+
+.pass-type-travel .pass-front .content .primary .item-last {
+    float: right;
+}
+
+.pass-type-travel .pass-front .content .primary .items-2 .item {
+    width: 40%;
+}
+
+.pass-type-travel .pass-front .content .primary .item-label {
+    color: #666666;
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+}
+
+.pass-type-travel .pass-front .content .primary .item-content {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 6px;
+}
+
+/*鍦板浘鍜岀數璇濆瓧娈电壒娈婂鐞�  start*/
+/*.pass-front .content .it-map .item-label { display:none!important; }*/
+.pass-front .content .it-map .item-content, .pass-front .content .it-tel .item-content {
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 19px;
+    background: transparent none 2px 1px no-repeat;
+    color: #7493c0;
+    font-weight: normal;
+}
+
+.pass-front .content .it-map .item-content {
+    background-image: url(../img/ico_loc.png);
+    text-align: left;
+}
+
+.pass-front .content .it-tel .item-content {
+    background-image: url(../img/ico_tel.png);
+    text-align: left;
+}
+
+.pass-front .content .it-tel .item-label, .pass-front .content .it-map .item-label {
+    text-align: left;
+}
+
+/*鍦板浘鍜岀數璇濆瓧娈电壒娈婂鐞� end*/
+
+.pass-type-travel .pass-front .content .secondary, .pass-type-travel .pass-front .content .auxiliary {
+    padding: 8px 10px 0;
+    height: 30px;
+}
+
+.pass-type-travel .pass-front .content .secondary .item-label, .pass-type-travel .pass-front .content .auxiliary .item-label {
+    color: #666666;
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+}
+
+.pass-type-travel .pass-front .content .secondary .item-content, .pass-type-travel .pass-front .content .auxiliary .item-content {
+    color: #000000;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.pass-type-travel .pass-front .content .auxiliary {
+    padding-bottom: 9px;
+}
+
+.pass-type-ticket .pass-front .content .strip {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+.pass-type-ticket .pass-front .content .strip img {
+    width: 68px;
+    height: 82px;
+}
+
+.pass-type-ticket .pass-front .content .primary .item-label, .pass-type-ticket .pass-front .content .secondary .item-label, .pass-type-ticket .pass-front .content .auxiliary .item-label {
+    color: #666666;
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+}
+
+.pass-type-ticket .pass-front .content .primary .item-content, .pass-type-ticket .pass-front .content .secondary .item-content, .pass-type-ticket .pass-front .content .auxiliary .item-content {
+    color: #000000;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.pass-type-ticket .pass-front .content .primary, .pass-type-ticket .pass-front .content .secondary {
+    background-color: #ededed;
+    padding: 10px;
+    padding-bottom: 0;
+    height: 40px;
+    overflow: hidden;
+    padding-right: 104px;
+}
+
+.pass-type-ticket .pass-front .content .primary .items {
+    margin-top: 6px;
+}
+
+.pass-type-ticket .pass-front .content .auxiliary {
+    padding: 10px;
+    height: 30px;
+}
+
+.pass-type-travel-boarding .pass-front .content .strip {
+    background-image: url(../img/flight.png);
+    display: block;
+}
+
+.pass-type-travel-boarding .pass-front .content .strip img {
+    display: none;
+}
+
+.pass-type-travel-air .pass-front .content .strip {
+    background-image: url(../img/flight.png);
+    display: block;
+}
+
+.pass-type-travel-air .pass-front .content .strip img {
+    display: none;
+}
+
+.pass-type-travel-train .pass-front .content .strip {
+    background-image: url(../img/train.png);
+    display: block;
+}
+
+.pass-type-travel-train .pass-front .content .strip img {
+    display: none;
+}
+
+.pass-type-travel-bus .pass-front .content .strip {
+    background-image: url(../img/bus.png);
+    display: block;
+}
+
+.pass-type-travel-bus .pass-front .content .strip img {
+    display: none;
+}
+
+/*@-webkit-keyframes flip-cw {
+    0% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    50% {
+        -webkit-transform: translate3d(0, 0, -200px) rotateY(90deg);
+    }
+    100% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+}
+
+@-webkit-keyframes flip-ccw {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: translate3d(0, 0, -200px) rotateY(90deg);
+    }
+    100% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+}*/
+@-webkit-keyframes flip-cw {
+    0% {
+        -webkit-transform: translateY(-375px);
+        transform: translateY(-375px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes flip-ccw {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    100% {
+        -webkit-transform: translateY(-375px);
+        transform: translateY(-375px);
+    }
+}
+@-webkit-keyframes pull-out {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, -390px, 0);
+    }
+}
+
+@-webkit-keyframes pull-down {
+    0% {
+        -webkit-transform: translate3d(0, -390px, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+#pass {
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: none .3s ease 0 1 normal;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+#pass.pass-flip {
+    -webkit-animation-name: flip-cw;
+}
+
+#pass.pass-fliped {
+    -webkit-transform: translateY(-375px)/*rotateY(180deg)*/;
+}
+
+#pass.pass-fliped.pass-flip {
+    -webkit-animation-name: flip-ccw;
+}
+
+.pass-front, .pass-back {
+    -webkit-backface-visibility: hidden;
+}
+
+#pass.pass-pull-out {
+    -webkit-animation: pull-out 0.3s ease-out 0 1 normal;
+    overflow: hidden;
+}
+
+#pass.pass-pull-down {
+    -webkit-animation: pull-down 0.4s ease-in 0 1 normal;
+    overflow: hidden;
+}
+
+.pass-back {
+    z-index: 1;
+    /*-webkit-transform: rotateY(180deg)*/;
+}
+
+.pass-front {
+    z-index: 2;
+}
+
+.pass-container div, .pass-container th, .pass-container td, .pass-container a {
+    cursor: pointer;
+}
+
+.pass-container a.rotate {
+    cursor: pointer;
+}
+
+.pass-front .it-text .item-label,
+.pass-front .it-text .item-content,
+.pass-front .it-tel .item-label,
+.pass-front .it-tel .item-content,
+.pass-front .it-map .item-label,
+.pass-front .it-map .item-content,
+.pass-front .it-url .item-label,
+.pass-front .it-url .item-content {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.pass-type-coupon .content .primary .item-content {
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}

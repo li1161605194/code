@@ -1,0 +1,127 @@
+@charset "utf-8";
+ul,li{
+    margin: 0;padding: 0;
+}
+/*pass-intro*/
+.pass-intro,.pass-title{
+    border-radius: 3px;
+}
+.pass-banner{
+    height: 314px;
+}
+.pass-banner>ul{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*pass-title*/
+.pass-title{
+    height: 30px;
+    padding: 20px 0 10px 0;
+}
+.pass-title ul {
+    float: left;
+    list-style: none;
+    height: 30px;
+    margin: 0;
+}
+.pass-title ul li{
+    float: left;
+    padding-left: 10px;
+    height: 30px;
+}
+.pass-title ul li:first-child{
+    padding-left: 0;
+}
+.pass-title ul li a{
+    display: block;
+    line-height: 28px;
+    text-align: center;
+    background: #f5f5f5;
+    padding: 0 15px;
+    color: #333;
+    border-radius: 3px;
+    border:1px solid #f5f5f5;
+}
+.pass-title ul li a.active{
+    background: #0087e6 url("../img/icon.png") no-repeat right bottom;
+    color: #ffffff;
+    text-decoration: none;
+    border:1px solid #0087e6;
+}
+.pass-title ul li a:hover{
+    border:1px solid #f89406;
+}
+.pass-title .intro-control{
+    display: block;
+    float: right;
+    height: 30px;
+    width: 54px;
+    background-color: #f1f1f1;
+    margin-top: -20px;
+    margin-right: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-transition:all 0.4s ease;
+    transition:all 0.4s ease;
+}
+/*pass-template*/
+.pass-template{
+    margin-left: -20px;
+}
+.pass-template-item{
+    background: #fff;
+    height: 315px;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-transition: all 0.8s ease;
+    transition:all 0.8s ease ;
+}
+.pass-template-item:hover{
+    background: #f1f1f1;
+}
+.pass-template-item h5{
+    font-weight: 500;
+    margin-top: 0;
+}
+.item-img{
+    padding:  0 5px 5px 5px;
+}
+.item-img a{
+    display: block;
+    width: 210px;
+}
+.item-img a img{
+    display: block;
+}
+
+#J-dialog{
+    height: 600px;
+    margin-top: -310px;
+    width: 420px;
+    margin-left: -210px;
+}
+.modal-body{
+    max-height: 550px;
+    padding: 5px 15px;
+}
+.modal-footer{
+    padding: 5px 15px;
+}
+.entryDoor{
+    position: absolute;
+    left: 50%;
+    margin-left: -470px;
+    z-index: 1000;
+    top: 258px;
+}
+#successfulCase .span1{
+    text-align: center;
+    color: #666;
+}
+.downClient{
+    padding-top: 70px;
+}
