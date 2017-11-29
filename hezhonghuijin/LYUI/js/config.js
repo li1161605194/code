@@ -1,7 +1,8 @@
 const fileConfig = "/LYUI/";
 let BaseUrl = {
-    JSPATH: "css/",
-    CSSPATH: "js/",
+    PATH: "/",
+    JSPATH: "js/",
+    CSSPATH: "css/",
     HTMLPATH: "html/",
     IMGPATH: "images/"
 }
@@ -20,8 +21,9 @@ if (prot.indexOf("file:") != -1) {
 let href = window.location.href;
 href = href.split(fileConfig)[0] + fileConfig;
 BaseUrl = {
-    JSPATH: href + "css/",
-    CSSPATH: href + "js/",
+    PATH: href,
+    JSPATH: href + "js/",
+    CSSPATH: href + "css/",
     HTMLPATH: href + "html/",
     IMGPATH: href + "images/"
 }
