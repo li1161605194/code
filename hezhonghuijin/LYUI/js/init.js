@@ -145,7 +145,7 @@ var isWeiXin = function() {
     } else {
         sfwx = 4;
         document.getElementsByTagName('html')[0].style.width = 640 + "px";
-        document.getElementsByTagName('html')[0].innerHTML = '请使用手机移动端浏览器打开';
+        //document.getElementsByTagName('html')[0].innerHTML = '请使用手机移动端浏览器打开';
     }
     return sfwx;
 }
