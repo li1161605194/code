@@ -1,4 +1,35 @@
 document.getElementsByTagName("html")[0].setAttribute("style", "opacity:0");
+
+const fileConfig = "/LYUI/";
+let BaseUrl = {
+    PATH: "/",
+    JSPATH: "js/",
+    CSSPATH: "css/",
+    HTMLPATH: "html/",
+    IMGPATH: "images/"
+}
+
+let prot = window.location.protocol;
+let host = window.location.host;
+let origin = window.location.origin;
+let AjaxUrl = "";
+if (prot.indexOf("file:") != -1) {
+    AjaxUrl = "";
+} else if (prot.indexOf("http:") != -1) {
+    AjaxUrl = prot + "//" + host + "/";
+} else if (prot.indexOf("https:") != -1) {
+    AjaxUrl = prot + "//" + host + "/";
+}
+let href = window.location.href;
+href = href.split(fileConfig)[0] + fileConfig;
+BaseUrl = {
+    PATH: href,
+    JSPATH: href + "js/",
+    CSSPATH: href + "css/",
+    HTMLPATH: href + "html/",
+    IMGPATH: href + "images/"
+}
+
 var date = new Date();
 var year = date.getFullYear();
 var month = date.getMonth() + 1;
@@ -19,7 +50,7 @@ var initCssJsUrl = {
     "js": [
         "js/unit/jquery.min.js",
         "js/unit/zepto.min.js",
-        "js/vue.min.js",
+        "js/unit/vue.min.js",
         "js/unit/weui.min.js",
         "js/unit/mui/mui.min.js",
         "js/unit/mui/mui.picker.min.js",
@@ -28,7 +59,10 @@ var initCssJsUrl = {
         "js/unit/screenQuery.js",
         "js/unit/easy.validate.form.js",
         "js/unit/swiper.min.js",
+        "js/config.js",
         "js/common.js",
+        "js/content.js",
+        "js/main.js",
     ]
 };
 
