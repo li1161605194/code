@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US-x-Hixie">
+<head>
+    <meta charset="utf-8"/>
+    <title>FileSaver.js demo</title>
+    <link rel="stylesheet" type="text/css" href="demo.css"/>
+</head>
+<body>
+    <h1>FileSaver.js demo</h1>
+    <section id="image-demo">
+        <h2>Saving an image</h2>
+        <canvas class="input" id="canvas" width="500" height="300"/>
+        <form id="canvas-options">
+            <label>Filename: <input type="text" class="filename" id="canvas-filename" placeholder="doodle"/>.png</label>
+            <input type="submit" value="Save"/>
+            <input type="button" id="canvas-clear" value="Clear"/>
+        </form>
+    </section>
+    <section id="text-demo">
+        <h2>Saving text</h2>
+        <textarea class="input" id="text" placeholder="Once upon a time..."/>
+        <form id="text-options">
+            <label>Filename: <input type="text" class="filename" id="text-filename" placeholder="a plain document"/>.txt</label>
+            <input type="submit" value="Save"/>
+        </form>
+    </section>
+    <script  src="./canvas-toBlob.js"/>
+    <script  src="../FileSaver.min.js"/>
+    <script  src="./demo.js"/>
+</body>
+</html>
