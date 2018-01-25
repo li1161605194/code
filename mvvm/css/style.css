@@ -1,0 +1,40 @@
+/* index 总首页 布局定位  start */
+.mvvm_zk{display:-webkit-box;width:100%;height:100%;-webkit-box-align:center;-webkit-box-pack:center;text-align:center;vertical-align:middle;}
+.mvvm_fk_dwk{display:-webkit-box;width:33.3333%;min-width:434.5px;height:100%;-webkit-box-align:center;-webkit-box-pack:center;text-align:center;vertical-align:middle;}
+.mvvm_ifm_bjk{width:434.5px;min-width:434.5px;height:100%;display:block;}
+.bgzjk{display:block;overflow:hidden;width:434.5px;height:667px;}
+.mvvm_ifm{width:375px;height:667px;float:left;}
+/* end */
+
+/* index 总首页  手机背景图片定位 start  */
+.bg1{display:block;background-image:url(../img/bg1001.png);width:433.5px;height:106.5px;background-size:100%;background-position:center center;}
+.bg2{background-image:url(../img/bg1002.png);float:left;width:29.5px;height:667px;background-size:100%;background-position:center center;}
+.bg3{background-image:url(../img/bg1003.png);float:left;width:30px;height:667px;background-size:100%;background-position:center center;}
+.bg4{display:block;background-image:url(../img/bg1004.png);width:433.5px;height:114.5px;background-size:100%;background-position:center center;}
+#web_zk{}
+/* end */
+
+/* index  总背景  背景动画效果  start*/
+.web_bj_canvas{position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;}
+.codrops-demos{font-size:0.8em;text-align:center;position:absolute;z-index:99;width:96%;}
+.codrops-demos a{display:inline-block;margin:0.35em 0.1em;padding:0.5em 1.2em;outline:none;text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-weight:700;border-radius:2px;font-size:110%;border:2px solid transparent;color:#fff;}
+.codrops-demos a:hover,
+.codrops-demos a.current-demo{border-color:#383a3c;}
+/*  end*/
+
+/* index 总首页  移动端 显示  start */
+.mvvm_sjkbj_wh_c{width:375px;height:667px;float:left;}
+.mvvm_alink_c{text-align:center;vertical-align:sub;font-size:1.4rem;color:#FFFFFF;text-decoration:none;}
+.alink_btn_c{display:block;width:70%;margin-left:auto;margin-right:auto;border-radius:0.4rem;height:4rem;line-height:4rem;background-color:#2244b2;}
+/* end */
+
+/*common 布局 样式 排版 start  */
+.modelTitle_c{display:block;width:100%;height:4.2rem;line-height:4.2rem;text-align:center;font-size:1.6rem;color:#FFFDEF;background-color:yellowgreen;}
+.line_srdwk_c{width: 94%;margin:1rem 3%;}
+.sr_input_c{width: 20%;height: 4rem;line-height: 4rem;font-size: 1.6rem;border: solid 2px #3f51b5;}
+.sr_return_c{display: inline-block; width: 74%;height: 4rem;line-height: 4rem;font-size: 1.6rem;color: #fff;background-color: #3f51b5;text-align: center;}
+/* end */
+
+/* colorName   start */
+.colorName_bjk{background-image: url(../img/6001.jpg);background-size: 100%;background-position: center;}
+/* end */

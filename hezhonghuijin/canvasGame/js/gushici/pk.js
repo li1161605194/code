@@ -36,6 +36,7 @@ randomTopic = function() {
     return scTempJson;
 }
 tm_init = function() {
+    qdsj = 999999999999999;
     var s = randomTopic();
     var msg = [];
     if (s.type == 0) {

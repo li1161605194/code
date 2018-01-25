@@ -1,0 +1,27 @@
+{
+	"stutas":"success",
+	"swiperimg":
+	[
+		{
+			"name":"1",
+			"src":"https://lstcode.applinzi.com/freeAPI/img/banner/1001.jpg",
+			"link":"",
+			"miaoshu":"第一个",
+			"beizhu":""
+		},
+		{
+			"name":"2",
+			"src":"https://lstcode.applinzi.com/freeAPI/img/banner/1002.jpg",
+			"link":"",
+			"miaoshu":"第二个",
+			"beizhu":""
+		},
+		{
+			"name":"3",
+			"src":"https://lstcode.applinzi.com/freeAPI/img/banner/1003.jpg",
+			"link":"",
+			"miaoshu":"第三个",
+			"beizhu":""
+		}
+	]
+}
