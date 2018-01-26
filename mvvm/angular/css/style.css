@@ -1,0 +1,16 @@
+/* angular  index start */
+.heng_line_zk{display: inline-block; width: 94%;margin: 0 3%;padding: 2rem 0;}
+.hline_topwb{color: #000; font-size: 1.6rem;font-weight: bold; height: 2.2rem;line-height: 2.2rem;text-align: center;width: 100%;overflow: hidden;white-space:nowrap;text-overflow:ellipsis; }
+.hline_zk{overflow: hidden;}
+.zxian{float: left;width: 20%;}
+.yxian{float: right;width: 20%;}
+.hline_c{display: block; border-top: solid 1px #333;}
+.hline_xiawb{display: inline-block; color: #666; font-size: 1.3rem;height: 2rem;line-height: 2rem;text-align: center;width: 100%; overflow: hidden;white-space:nowrap;text-overflow:ellipsis;}
+/* end */
+
+/* colorName   start */
+.colorName_bjk{background-image: url(../img/6001.jpg);background-size: 100%;background-position: center;}
+.line_srdwk_c{width: 94%;margin:1rem 3%;}
+.sr_input_c{width: 20%;height: 4rem;line-height: 4rem;font-size: 1.6rem;border: solid 2px #3f51b5;}
+.sr_return_c{display: inline-block; width: 74%;height: 4rem;line-height: 4rem;font-size: 1.6rem;color: #fff;background-color: #3f51b5;text-align: center;}
+/* end */
