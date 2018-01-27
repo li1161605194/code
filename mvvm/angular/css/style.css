@@ -1,5 +1,5 @@
 /* html body angular_common c  start*/
-html,body{width: 100%;min-width: 320px;max-width: 960px;margin: 0 auto;}
+html,body{width: 100%;margin: 0 auto;min-width: 320px;max-width: 960px;overflow-x: hidden;}
 .padtopw_c{height: 0;}
 /*  end */
 /* angular  index start */
