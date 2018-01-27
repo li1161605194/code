@@ -6,6 +6,10 @@
 .yxian{float: right;width: 20%;}
 .hline_c{display: block; border-top: solid 1px #333;}
 .hline_xiawb{display: inline-block; color: #666; font-size: 1.3rem;height: 2rem;line-height: 2rem;text-align: center;width: 100%; overflow: hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ng_view_zk{display: inline-block; width: 94%;margin: 0 3%;}
+.ng_view_bjk{width: 50%;}
+.imgstyle{width: 100%;}
+.chunse_k{width: 50%;}
 /* end */
 
 /* colorName   start */
