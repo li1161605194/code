@@ -1,3 +1,7 @@
+/* html body angular_common c  start*/
+html,body{width: 100%;min-width: 320px;max-width: 960px;margin: 0 auto;}
+.padtopw_c{height: 0;}
+/*  end */
 /* angular  index start */
 .heng_line_zk{display: inline-block; width: 94%;margin: 0 3%;padding: 2rem 0;}
 .hline_topwb{color: #000; font-size: 1.6rem;font-weight: bold; height: 2.2rem;line-height: 2.2rem;text-align: center;width: 100%;overflow: hidden;white-space:nowrap;text-overflow:ellipsis; }
@@ -7,8 +11,8 @@
 .hline_c{display: block; border-top: solid 1px #333;}
 .hline_xiawb{display: inline-block; color: #666; font-size: 1.3rem;height: 2rem;line-height: 2rem;text-align: center;width: 100%; overflow: hidden;white-space:nowrap;text-overflow:ellipsis;}
 .ng_view_zk{display: inline-block; width: 94%;margin: 0 3%;}
-.ng_view_bjk{width: 50%;}
-.imgstyle{width: 100%;}
+.ng_view_bjk{width: 100%;overflow: hidden;}
+.img_bgk{width: 50%;background-size: 100%;background-position: center;}
 .chunse_k{width: 50%;}
 /* end */
 
