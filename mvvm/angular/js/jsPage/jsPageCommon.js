@@ -1,3 +1,24 @@
+function angularaddJsLoad(options) {
+    var js = document.createElement('script');
+    js.setAttribute('type', 'text/javascript');
+    js.setAttribute('src', 'js/angular.js');
+    document.getElementsByTagName('head')[0].appendChild(js);
+    if (js.readyState) {
+        js.onreadystatechange = function() {
+            if (js.readyState == "loaded" || js.readyState == "complete") {
+                js.onreadystatechange = null;
+                app = angular.module("ajsPage", []);
+                addJsLoad(options)
+            }
+        };
+    } else {
+        js.onload = function() {
+            app = angular.module("ajsPage", []);
+            addJsLoad(options)
+        };
+    }
+}
+
 function addJsLoad(options) {
     var js = document.createElement('script');
     js.setAttribute('type', 'text/javascript');
@@ -60,17 +81,17 @@ var ca = "loginty2u_usernamep3lkjh4gfds=5azxcvbnm";
 var cb = "QAZ6WSX7userinfo_RFV9TGBYHNcode=IKOLP";
 var urlJson = searchParse();
 var LSTJSPAGE = document.getElementById("LSTJSPAGE");
-LSTJSPAGE.innerHTML = '';
+//LSTJSPAGE.innerHTML = '';
 var app = '';
 if (urlJson && urlJson.jp) {
-    addJsLoad({
+    angularaddJsLoad({
         url: 'js/jsPage/' + urlJson.jp + '.js',
         callback: function() {
 
         }
     })
 } else {
-    addJsLoad({
+    angularaddJsLoad({
         url: 'js/jsPage/jsPage.js',
         callback: function() {
 
