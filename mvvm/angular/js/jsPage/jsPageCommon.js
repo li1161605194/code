@@ -7,16 +7,46 @@ function angularaddJsLoad(options) {
         js.onreadystatechange = function() {
             if (js.readyState == "loaded" || js.readyState == "complete") {
                 js.onreadystatechange = null;
-                app = angular.module("ajsPage", []);
+                appInitModule()
                 addJsLoad(options)
             }
         };
     } else {
         js.onload = function() {
-            app = angular.module("ajsPage", []);
+            appInitModule()
             addJsLoad(options)
         };
     }
+}
+
+function appInitModule() {
+    app = angular.module("ajsPage", []);
+    app.directive("dyCompile", ["$compile", function($compile) {
+        return {
+            replace: true,
+            restrict: 'EA',
+            link: function(scope, elm, iAttrs) {
+                var DUMMY_SCOPE = {
+                        $destroy: angular.noop
+                    },
+                    root = elm,
+                    childScope,
+                    destroyChildScope = function() {
+                        (childScope || DUMMY_SCOPE).$destroy();
+                    };
+                iAttrs.$observe("html", function(html) {
+                    if (html) {
+                        destroyChildScope();
+                        childScope = scope.$new(false);
+                        var content = $compile(html)(childScope);
+                        root.replaceWith(content);
+                        root = content;
+                    }
+                    scope.$on("$destroy", destroyChildScope);
+                });
+            }
+        };
+    }]);
 }
 
 function addJsLoad(options) {
@@ -42,8 +72,8 @@ function addJsLoad(options) {
     }
 }
 
-var cache = {
-    set: function(k, v) {
+var C = {
+    cacheSet: function(k, v) {
         if (typeof(localStorage === 'object') && window.localStorage) {
             window.localStorage.setItem(ca + k + cb, v);
         } else {
@@ -51,11 +81,18 @@ var cache = {
             return false;
         }
     },
-    get: function(k) {
+    cacheGet: function(k) {
         if (typeof(localStorage === 'object') && window.localStorage) {
             return window.localStorage.getItem(ca + k + cb);
         } else {
             console.log(20002);
+            return false;
+        }
+    },
+    isKong: function(data) {
+        if (data == null || data == undefined || data == "null" || data == "undefined" || (data == "" && typeof(data) != "object")) {
+            return true;
+        } else {
             return false;
         }
     }
@@ -81,20 +118,28 @@ var ca = "loginty2u_usernamep3lkjh4gfds=5azxcvbnm";
 var cb = "QAZ6WSX7userinfo_RFV9TGBYHNcode=IKOLP";
 var urlJson = searchParse();
 var LSTJSPAGE = document.getElementById("LSTJSPAGE");
-//LSTJSPAGE.innerHTML = '';
 var app = '';
-if (urlJson && urlJson.jp) {
-    angularaddJsLoad({
-        url: 'js/jsPage/' + urlJson.jp + '.js',
-        callback: function() {
+if (C.isKong(C.cacheGet("jp"))) {
+    if (urlJson && urlJson.jp) {
+        angularaddJsLoad({
+            url: 'js/jsPage/' + urlJson.jp + '.js',
+            callback: function() {
 
-        }
-    })
+            }
+        });
+    } else {
+        angularaddJsLoad({
+            url: 'js/jsPage/jsPage.js',
+            callback: function() {
+
+            }
+        });
+    }
 } else {
     angularaddJsLoad({
-        url: 'js/jsPage/jsPage.js',
+        url: 'js/jsPage/' + C.cacheGet("jp") + '.js',
         callback: function() {
 
         }
-    })
+    });
 }
