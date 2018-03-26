@@ -53,6 +53,7 @@ function addJsLoad(options) {
     var js = document.createElement('script');
     js.setAttribute('type', 'text/javascript');
     js.setAttribute('src', options.url);
+    js.setAttribute('bjbj', "bjbj");
     document.getElementsByTagName('body')[0].appendChild(js);
     if (js.readyState) {
         js.onreadystatechange = function() {
@@ -71,7 +72,8 @@ function addJsLoad(options) {
         };
     }
 }
-
+var ca = "loginty2u_usernamep3lkjh4gfds=5azxcvbnm";
+var cb = "QAZ6WSX7userinfo_RFV9TGBYHNcode=IKOLP";
 var C = {
     cacheSet: function(k, v) {
         if (typeof(localStorage === 'object') && window.localStorage) {
@@ -97,7 +99,6 @@ var C = {
         }
     }
 }
-
 var searchParse = function() {
     var resultObj = {};
     var search = window.location.search;
@@ -114,32 +115,44 @@ var searchParse = function() {
     }
     return resultObj;
 }
-var ca = "loginty2u_usernamep3lkjh4gfds=5azxcvbnm";
-var cb = "QAZ6WSX7userinfo_RFV9TGBYHNcode=IKOLP";
 var urlJson = searchParse();
 var LSTJSPAGE = document.getElementById("LSTJSPAGE");
 var app = '';
-if (C.isKong(C.cacheGet("jp"))) {
-    if (urlJson && urlJson.jp) {
-        angularaddJsLoad({
-            url: 'js/jsPage/' + urlJson.jp + '.js',
-            callback: function() {
 
+function initLoadJsCommon() {
+    var _s_arr = document.getElementsByTagName("script");
+    if (_s_arr.length <= 0) {} else {
+        for (var i = 0; i < _s_arr.length; i++) {
+            if (_s_arr[i].getAttribute("bjbj") != undefined && _s_arr[i].getAttribute("bjbj") != null && _s_arr[i].getAttribute("bjbj") == "bjbj") {
+                _s_arr[i].remove();
             }
-        });
+        }
+    }
+    if (C.isKong(C.cacheGet("jp"))) {
+        if (urlJson && urlJson.jp) {
+            angularaddJsLoad({
+                url: 'js/jsPage/' + urlJson.jp + '.js',
+                callback: function() {
+
+                }
+            });
+        } else {
+            angularaddJsLoad({
+                url: 'js/jsPage/jsPage.js',
+                callback: function() {
+
+                }
+            });
+        }
     } else {
         angularaddJsLoad({
-            url: 'js/jsPage/jsPage.js',
+            url: 'js/jsPage/' + C.cacheGet("jp") + '.js',
             callback: function() {
 
             }
         });
     }
-} else {
-    angularaddJsLoad({
-        url: 'js/jsPage/' + C.cacheGet("jp") + '.js',
-        callback: function() {
-
-        }
-    });
 }
+
+
+initLoadJsCommon();

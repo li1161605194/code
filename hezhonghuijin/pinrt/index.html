@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery打印插件jqprint</title>
+    <script language="javascript" src="jquery-1.4.4.min.js"></script>
+    <script language="javascript" src="jquery.jqprint-0.3.js"></script>
+</head>
+
+<body>
+  <div style="border: solid 1px #000;width: 300px;height: 100px;">
+    <canvas id="c1" width="300px" height="100px">
+        <!--宽高写在html里，写在css里有问题-->
+        <span>该浏览器不支持canvas内容</span>
+        <!--对于不支持canvas的浏览器显示-->
+    </canvas>
+    </div>
+    <input type="button" onclick="aa()" value="打印" />
+    <div id="ddd" style="position: fixed;z-index: -9999;top: -99999px;left: -99999px;">
+        <img src="testimg.jpg" id="testimg" width="800" height="1131" style="width: 800px;height: 1131px; ">
+        <p id="idcard" style="position: absolute;top: 124px;left: 135px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;">杨丽敏</p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;">411241187545412563</p>
+        <p id="idcard" style="position: absolute;top: 170px;left: 135px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;">税1187545412563</p>
+        <p id="idcard" style="position: absolute;top: 170px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;">2018-03-20</p>
+        <p id="idcard" style="position: absolute;top: 170px;left: 665px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;">2018-05-12</p>
+        <p id="idcard" style="position: absolute;top: 210px;left: 135px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;">小刘</p>
+        <p id="idcard" style="position: absolute;top: 210px;left: 305px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;">12345678</p>
+        <p id="idcard" style="position: absolute;top: 210px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;">郑州郑州郑州</p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+        <p id="idcard" style="position: absolute;top: 124px;left: 480px; z-index: 9;font-size: 16px;color: #000;font-weight: bold;margin: 0;padding: 0;border: 0;"></p>
+    </div>
+    <!-- <canvas id="z_canvas"></canvas> -->
+    <script>
+    window.onload = function() {
+        var oC = document.getElementById('c1');
+        var oCG = oC.getContext('2d');
+        oC.onmousedown = function(ev) {
+            var ev = ev || window.event;
+            oCG.moveTo(ev.clientX - oC.offsetLeft, ev.clientY - oC.offsetTop); //ev.clientX-oC.offsetLeft,ev.clientY-oC.offsetTop鼠标在当前画布上X,Y坐标
+            document.onmousemove = function(ev) {
+                var ev = ev || window.event; //获取event对象
+                oCG.lineTo(ev.clientX - oC.offsetLeft, ev.clientY - oC.offsetTop);
+                oCG.stroke();
+            };
+            oC.onmouseup = function() {
+                document.onmousemove = null;
+                document.onmouseup = null;
+            };
+        };
+    };
+    var ddd = $("#ddd");
+    $(function() {
+        /*var c = document.getElementById("z_canvas");
+        var ctx = c.getContext("2d");
+        var img = document.getElementById("testimg");
+        ctx.drawImage(img, 0, 0);
+
+        var c=document.getElementById("c1");
+ var ctx=c.getContext("2d");ctx.scale(0.5,0.5);var c1 = document.getElementById("qianm");
+        c1.src =c.toDataURL("image/png");  $("#qianm").attr("style","position: absolute;top: 983px;left: 450px;z-index: 9999;");   $("#ddd").jqprint();
+        */
+    })
+
+    function aa() {
+        var _style = $("#ddd").attr("style");
+        $("#ddd").attr("style", "position: relative;");
+        $("#ddd").jqprint();
+        $("#ddd").attr("style", _style);
+    }
+    </script>
+</body>
+
+</html>

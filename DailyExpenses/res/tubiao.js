@@ -150,9 +150,13 @@ var czArray = [{
     yijiText: "年份",
     yijiKey: "year",
     yijiImg: "../res/img/meishi3.png",
-    defaultValue: "2017",
+    defaultValue: "2018",
     dataList: [{
         erjiText: "2017"
+    }, {
+        erjiText: "2018"
+    }, {
+        erjiText: "2019"
     }]
 }, {
     yijiText: "月份",
