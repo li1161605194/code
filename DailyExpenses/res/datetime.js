@@ -123,7 +123,7 @@ var chazhangInit = {
                 }
             },
             error: function(res) {
-                layer.msg(res.error);
+                layer.msg(JSON.stringify(res));
             }
         });
     },

@@ -59,13 +59,13 @@ function selectBill($data){
 			t
 		ORDER BY t DESC";
 		if($data['month']&&$data['month']!=null&&!empty($data['month'])){
-			$query=mysql_query($sqlMonth,$connID); 
+			$query=$connID->query($sqlMonth); 
 		}else{
-			$query=mysql_query($sqlYear,$connID); 
+			$query=$connID->query($sqlYear); 
 		}
 		$arr = array();  
 		if($query){
-			while($result=mysql_fetch_array($query)) {  
+			while($result=mysqli_fetch_array($query)) {  
 				$count=count($result);
 			    for($i=0;$i<$count;$i++){  
 			        unset($result[$i]); 

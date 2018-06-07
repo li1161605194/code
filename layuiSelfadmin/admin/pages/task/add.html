@@ -1,0 +1,50 @@
+<div class="layui-form pdzy20">
+    <div class="layui-form-item">
+        <label class="layui-form-label">角色隶属：</label>
+        <div class="layui-input-block">
+            <select id="role_org" name="orgId" lay-search="" lay-verify="required">
+                
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">角色名称：</label>
+        <div class="layui-input-block">
+            <input name="name" class="layui-input" type="text" placeholder="请输入角色名称" autocomplete="off" lay-verify="required">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">角色类型：</label>
+        <div class="layui-input-block">
+            <select name="type" lay-search="" lay-verify="required">
+                <option value="1">用户端</option>
+                <option value="2">管理端</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">是否禁用：</label>
+        <div class="layui-input-block">
+            <input name="enabled" title="是" type="radio" value="0">
+            <input name="enabled" title="否" type="radio" checked="" value="1">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">角色序号：</label>
+        <div class="layui-input-block">
+            <input name="listorder" class="layui-input" type="text" placeholder="请输入角色序号" value="1" autocomplete="off" lay-verify="required|number">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">角色备注：</label>
+        <div class="layui-input-block">
+            <textarea name="remark" class="layui-input" type="text" placeholder="角色备注" autocomplete="off" lay-verify="required"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-filter="menu-add" lay-submit="" id="menu_add_submit">确认添加</button>
+        </div>
+    </div>
+</div>
+<sctemp data-src="task/add.js"></sctemp>

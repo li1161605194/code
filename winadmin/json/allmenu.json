@@ -1,0 +1,41 @@
+﻿{
+    "code": 1,
+    "message": "成功",
+    "data": [{
+        "title": "系统设置",
+        "pageURL": null,
+        "name": "系统设置",
+        "icon": "fa-cog",
+        "openType": 1,
+        "extend": false,
+        "childs": [{
+            "title": "系统菜单",
+            "pageURL": "views/menu/list_iframe.html",
+            "name": "系统菜单",
+            "icon": "fa-navicon",
+            "openType": 2,
+            "extend": false,
+            "childs": null,
+            "id": 2
+        }, {
+            "title": "操作员管理",
+            "pageURL": "/operator/index",
+            "name": "操作员管理",
+            "icon": "fa-user",
+            "openType": 1,
+            "extend": false,
+            "childs": null,
+            "id": 19
+        }, {
+            "title": "角色管理",
+            "pageURL": "views/role/list.html",
+            "name": "角色管理",
+            "icon": "fa-th-large",
+            "openType": 2,
+            "extend": false,
+            "childs": null,
+            "id": 22
+        }],
+        "id": 23
+    }]
+}

@@ -4,12 +4,12 @@ include_once('mysql.php');
 	function loginStatu(){
 		if(isset($_SESSION['uid'])&&$_SESSION['uid']&&$_SESSION['uid']!=null){
 			$D=new myDataBase();
-			$connID=$D->dataBase();  
+			$mysqli=$D->dataBase();  
 			$userId=$_SESSION['uid'];
 			$sql = "SELECT * FROM user WHERE id='$userId'";
-			$query=mysql_query($sql,$connID); 
+			$query=$mysqli->query($sql); 
 			if($query){
-				$result=mysql_fetch_object($query);
+				$result=mysqli_fetch_object($query);
 				if($_SESSION['user_code']==$result ->user_code){
 					$href=$result ->code_href;
 				}else{
@@ -39,14 +39,14 @@ include_once('mysql.php');
 		$user_password=$dataParams['user_password'];
 		$user_code=$dataParams['user_code'];
 		$D=new myDataBase();
-		$connID=$D->dataBase();  
+		$mysqli=$D->dataBase();  
 		$sql = "SELECT * FROM user WHERE user_name='$user_name' AND user_pwd='$user_password' AND user_code='$user_code'";
-		$query=mysql_query($sql,$connID); 
+		$query=$mysqli->query($sql);  
 		if($query){
 			$_SESSION['user_name']=$user_name;
 			$_SESSION['user_password']=$user_password;
 			$_SESSION['user_code']=$user_code;
-			$result=mysql_fetch_object($query);
+			$result=mysqli_fetch_object($query);
 			if($user_code==$result ->user_code){
 				$href=$result ->code_href;
 			}else{

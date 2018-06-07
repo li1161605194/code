@@ -1,0 +1,49 @@
+<div class="layui-form pdzy20">
+    <div class="layui-form-item">
+        <label class="layui-form-label">选择菜单：</label>
+        <div class="layui-input-block">
+            <input type="text" name="id" lay-verify="required" style="display: none;" ms-duplex="@menuID">
+            <select id="menu_parent" lay-filter="parentId" lay-search="" lay-verify="required">
+            </select>
+        </div>
+    </div>
+    <div ms-visible="@toggle">
+        <div class="layui-form-item">
+            <label class="layui-form-label">菜单名称：</label>
+            <div class="layui-input-block">
+                <input name="name" class="layui-input" type="text" placeholder="请输入菜单名称" autocomplete="off" lay-verify="required" ms-duplex="@name">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">菜单路径：</label>
+            <div class="layui-input-block">
+                <input name="url" class="layui-input" type="text" placeholder="请输入菜单路径" autocomplete="off" lay-verify="required" ms-duplex="@url">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">菜单图标：</label>
+            <div class="layui-input-block" id="menu_icon_zk">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">菜单序号：</label>
+            <div class="layui-input-block">
+                <input name="listorder" class="layui-input" type="text" placeholder="请输入菜单序号" value="1" autocomplete="off" lay-verify="required|number" ms-duplex="@listorder">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否禁用：</label>
+            <div class="layui-input-block">
+                <input name="enabled" title="是" type="radio" value="0">
+                <input name="enabled" title="否" type="radio" checked="" value="1">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-filter="menu-add" lay-submit="" id="menu_edit_submit">确认修改</button>
+            </div>
+        </div>
+    </div>
+</div>
+<sctemp data-src="unit/avalon/avalon.modern.min.js"></sctemp>
+<sctemp data-src="menu/edit.js"></sctemp>

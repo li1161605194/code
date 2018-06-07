@@ -1,0 +1,61 @@
+<div ms-visible="@showhide_yi">
+    <div class="layui-form-item layui-row">
+        <button class="layui-btn layui-col-xs12" id="add_yiji">添加品牌</button>
+    </div>
+    <div class="cf nestable-lists">
+        <div class="dd" id="nestable">
+        </div>
+    </div>
+</div>
+<div id="add_edit_zk" class="hidehide" ms-visible="@showhide_er">
+    <div class="layui-form pdzy20">
+        <div ms-if="@parent_sh" class="layui-form-item">
+            <label class="layui-form-label">父级ID：</label>
+            <div class="layui-input-block">
+                <input readonly="readonly" ms-duplex="@parentIdname" name="parentIdname" class="layui-input" type="text" autocomplete="off" lay-verify="required">
+                <input readonly="readonly" ms-duplex="@parentId" name="parentId" class="layui-input" type="text" style="display: none;" autocomplete="off" lay-verify="required">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">品牌型系：</label>
+            <div class="layui-input-block">
+                <input name="name" ms-duplex="@name" class="layui-input" type="text" placeholder="请输入品牌型系名称" autocomplete="off" lay-verify="required">
+                <input ms-if="@id_sh" ms-duplex="@id" name="id" readonly="readonly" class="layui-input" type="text" style="display: none;" autocomplete="off" lay-verify="required">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">缩略图：</label>
+            <div class="layui-input-block">
+                <input name="image" ms-duplex="@image" id="ctm_img" class="layui-input hidehide" type="text" autocomplete="off" lay-verify="required">
+                <div style="float: left;">
+                    <button type="button" class="layui-btn" id="test1">上传图片</button>
+                </div>
+                <div class="layui-col-xs6 ml10">
+                    <img style="height: 38px;" class="layui-upload-img" id="demo1">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">序号：</label>
+            <div class="layui-input-block">
+                <input name="listorder" ms-duplex="@listorder" class="layui-input" type="text" placeholder="请输入品牌型系序号" value="1" autocomplete="off" lay-verify="required|number">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否禁用：</label>
+            <div class="layui-input-block">
+                <input name="enabled" title="是" type="radio" value="0">
+                <input name="enabled" title="否" type="radio" checked="" value="1">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-filter="ctm-add" lay-submit="" id="ctm_add_submit">{{@add_edit_wz}}</button>
+            	<button class="layui-btn layui-btn-normal ml10" id="ctm_back">返回</button>
+            </div>
+        </div>
+    </div>
+</div>
+<sctemp data-src="unit/avalon/avalon.modern.min.js"></sctemp>
+<sctemp data-src="unit/jquery.nestable.js"></sctemp>
+<sctemp data-src="base/car_type_manage.js"></sctemp>

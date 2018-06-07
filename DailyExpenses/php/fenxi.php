@@ -140,17 +140,17 @@ function selectBillFenXi($data){
 		ORDER BY t DESC";
 
 		if($data['type']&&$data['type']!=null&&!empty($data['type'])&&$data['type']=="fullyear"){
-			$query=mysql_query($sqlYear,$connID); 
+			$query=$connID->query($sqlYear); 
 		}else if($data['type']&&$data['type']!=null&&!empty($data['type'])&&$data['type']=="allmonth"){
-			$query=mysql_query($sqlYear2,$connID); 
+			$query=$connID->query($sqlYear2); 
 		}else if($data['type']&&$data['type']!=null&&!empty($data['type'])&&$data['type']=="onemonth"){
-			$query=mysql_query($sqlMonth,$connID); 
+			$query=$connID->query($sqlMonth); 
 		}else{
-			$query=mysql_query($sqlYear2,$connID); 
+			$query=$connID->query($sqlYear2); 
 		}
 		$arr = array();  
 		if($query){
-			while($result=mysql_fetch_array($query)) {  
+			while($result=mysqli_fetch_array($query)) {  
 				$count=count($result);
 			    for($i=0;$i<$count;$i++){  
 			        unset($result[$i]); 

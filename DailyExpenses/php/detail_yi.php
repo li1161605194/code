@@ -12,10 +12,10 @@ function selectBillDetailyi($data){
 			$date=$data['date'];
 		
 			$sql="SELECT * FROM	bill WHERE	userId = '$userId' AND	bdate LIKE '$date%' order by bdate desc,id desc";
-			$query=mysql_query($sql,$connID); 
+			$query=$connID->query($sql); 
 			$arr = array();  
 			if($query){
-				while($result=mysql_fetch_array($query)) {  
+				while($result=mysqli_fetch_array($query)) {  
 					$count=count($result);
 				    for($i=0;$i<$count;$i++){  
 				        unset($result[$i]); 

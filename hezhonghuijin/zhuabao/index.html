@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>html转json</title>
+    <link rel="stylesheet" type="text/css" href="../../layuiSelfadmin/admin/js/layui/css/layui.css">.
+    <style type="text/css">
+    	.layui-form-pane .layui-form-label{width: 130px;}
+    	.layui-form-pane .layui-input-block{margin-left: 130px;}
+    </style>
+</head>
+
+<body>
+    <div class="layui-tab-content site-demo site-demo-body">
+        <div class="layui-tab-item layui-show">
+            <div class="layui-main">
+                <div id="LAY_preview">
+                    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                        <legend>跨域获取页面数据-配置-操作页面</legend>
+                    </fieldset>
+                    <div class="layui-form layui-form-pane" action="">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">页面URL地址</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="url" id="zb_url" autocomplete="off" placeholder="请输入页面URL地址" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">单行选择框</label>
+                            <div class="layui-input-block">
+                                <select id="zb_type" name="interest" lay-filter="aihao">
+                                    <option value="1">品牌</option>
+                                    <option value="2" selected="selected">车系</option>
+                                    <option value="3">车型</option>
+                                    <option value="4">四级</option>
+                                    <option value="5">555</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item" pane="">
+                            <label class="layui-form-label">是否定义循环</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" checked="" name="open" lay-skin="switch" lay-filter="switchTest" title="开关">
+                                <div class="layui-unselect layui-form-switch layui-form-onswitch" lay-skin="_switch"><em></em><i></i></div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item" pane="">
+                            <label class="layui-form-label">配置节点标识</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="sex" value="1" title="nr" checked="">
+                                <input type="radio" name="sex" value="2" title="nr_box">
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">返回DOM结果</label>
+                            <div class="layui-input-block">
+                                <textarea id="res" readonly="readonly" class="layui-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <button class="layui-btn" id="zb_yes">确定</button>
+                        </div>
+                        <div class="layui-form-item">
+                            <button class="layui-btn" id="zb_json">json</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="res1" style="display: none;opacity: 0;visibility: hidden;overflow: hidden;" style="display: block;"></div>
+    <script type="text/javascript" src="../../res/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../layuiSelfadmin/admin/js/layui/layui.js"></script>
+    <script type="text/javascript" src="../../layuiSelfadmin/admin/js/unit/avalon/avalon.modern.min.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="page.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

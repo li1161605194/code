@@ -13,7 +13,7 @@ function deleteBill($data){
 		
 			$sql="DELETE FROM bill WHERE id = '$bid'";
 
-			$query=mysql_query($sql,$connID);  
+			$query=$connID->query($sql);  
 			if($query){    
 				echo urldecode(json_encode(array('resultCode' => "Y","resultMessage"=>"删除成功"))); 
 			}else{

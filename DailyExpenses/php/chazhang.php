@@ -44,17 +44,17 @@ function selectBill($data){
 		$num=($pageNum-1)*10;
 		$pageNumsql="LIMIT $num,10";
 
-		$totalNum=mysql_query("SELECT COUNT(*) AS totalNum FROM bill WHERE userId = '$userId' ".$typesql." ".$moneysql." ".$yearsql." ".$monthsql,$connID);
+		$totalNum=$connID->query("SELECT COUNT(*) AS totalNum FROM bill WHERE userId = '$userId' ".$typesql." ".$moneysql." ".$yearsql." ".$monthsql);
 		if($totalNum){
-			$a=mysql_fetch_object($totalNum);
+			$a=mysqli_fetch_object($totalNum);
 			$a=$a->totalNum;
 
 			$sql="SELECT * FROM bill WHERE userId = '$userId' ".$typesql." ".$moneysql." ".$yearsql." ".$monthsql." order by bdate desc,id desc"." ".$pageNumsql;
 
-			$query=mysql_query($sql,$connID);  
+			$query=$connID->query($sql);  
 			$arr = array();  
 			if($query){
-				while($result=mysql_fetch_array($query)) {  
+				while($result=mysqli_fetch_array($query)) {  
 					$count=count($result);
 				    for($i=0;$i<$count;$i++){  
 				        unset($result[$i]); 

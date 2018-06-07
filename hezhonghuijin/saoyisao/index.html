@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="../../res/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../res/js/jquery.form.min.js"></script>
+</head>
+
+<body>
+    <form id="uploadimg_form" action="upload_ocr.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="upload_type" value="1" style="display: none;">
+        <input type="file" name="file" capture="" accept="image/*" multiple="">
+        <select id="ocr_type" name="ocr_type">
+            <option value="SFZ">身份证</option>
+            <option value="YHK">银行卡</option>
+            <option value="JSZ">驾驶证</option>
+            <option value="XSZ">行驶证</option>
+            <option value="CHP">车号牌</option>
+        </select>
+        <select id="ocr_ai" name="ocr_ai">
+            <option value="qq">腾讯</option>
+            <option value="bd">百度</option>
+        </select>
+        <input type="button" id="submit" value="上传" />
+    </form>
+    <script type="text/javascript">
+    var looptime = 1;
+
+    function submitImgOcr() {
+        $("#uploadimg_form").ajaxSubmit(function(res) {
+            res = JSON.parse(res);
+            if (res.imginfo.data.item_list.length == 0) {
+                var time = 3000 * looptime;
+                setTimeout(function() {
+                    submitImgOcr();
+                    looptime = looptime + 1;
+                }, time);
+            } else {}
+        });
+        return false;
+    }
+    $(function() {
+        $("#submit").click(function(event) {
+            submitImgOcr();
+            return false;
+        });
+    })
+    </script>
+</body>
+
+</html>

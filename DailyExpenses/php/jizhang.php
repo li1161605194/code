@@ -9,7 +9,7 @@ function insertBill($dataParams) {
 		if(isset($_SESSION['uid'])&&$_SESSION['uid']&&$_SESSION['uid']!=""&&$_SESSION['uid']!=null){
 		$userId=$_SESSION['uid'];
 
-			$query=mysql_fetch_array(mysql_query("select max(id) as id from bill",$connID));   
+			$query=mysqli_fetch_array($connID->query("select max(id) as id from bill"));   
 		  	$id=$query['id']+1;  
 			$type=$dataParams['type'];
 			$paytype=$dataParams['paytype'];
@@ -19,7 +19,7 @@ function insertBill($dataParams) {
 			$remark=$dataParams['remark'];
 		  	$sql = "INSERT INTO bill (id, datype, type, paytype, bmoney, userId, bdate, remark) 
 		  	VALUES ('$id', '$da_type', '$type', '$paytype', '$money', '$userId', '$date', '$remark')";
-			if (mysql_query($sql,$connID) == TRUE) {
+			if ($connID->query($sql) == TRUE) {
 				echo '{"resultCode":"Y"}';
 			} else {
 				echo urldecode(json_encode(array('resultCode' => "N",'error' => "请刷新","code"=>array($sql, $id,$type,$da_type,$money,$userId,$date,$remark))));
